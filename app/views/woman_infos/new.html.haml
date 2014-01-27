@@ -1,0 +1,28 @@
+=render "layouts/tab"
+=form_for :wi, :url => {:action => :create} do |t|
+  .center
+    =t.label "Вік"
+    =t.text_field :age
+    %br
+    =t.label "Поступила"
+    =t.datetime_select :input
+    %br
+    =t.label "Виписана"
+    =t.datetime_select :output
+    %br
+    =t.label "Ліжко днів"
+    =t.text_field :bed
+    %br
+    =t.label "Ким направлена"
+    =t.text_field :directed
+    %br
+    =t.label "Місце проживання"
+    =t.text_field :home_adress
+    %br
+    =t.label "Телефон"
+    =t.text_field :tel
+    %br
+    =t.label "Інвалід"
+    =t.check_box :invalidity
+    %br
+    =t.submit "Create"

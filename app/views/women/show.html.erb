@@ -1,0 +1,22 @@
+<table cellspacing="5">
+	<tr>
+		<th><h3 class="center"><%= @woman.fname%><%= @woman.sname%><%= @woman.surname%></h3></th>
+		<th><h3 class="right">№<%= @woman.history_id%></h3></th>
+	</tr>
+	<tr>
+		<td>
+			<p>Група крові: <%=@woman.blood.number%></p>
+			<%= link_to "edit", edit_woman_blood_path(@woman, @woman.blood.id)%>
+		</td>
+		<td>
+			<p>Вік: <%=@woman.woman_info.age%></p>
+			<%= link_to "edit", edit_woman_woman_info_path(@woman, @woman.woman_info.id)%>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>Група крові: <%=@woman.blood.number%></p>
+		</td>
+		<td><p>Вік: <%=@woman.woman_info.age%></p></td>
+	</tr>
+</table>

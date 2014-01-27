@@ -1,0 +1,16 @@
+=render "layouts/tab"
+
+=form_for :woman, url: {action: :update}, method: :put do |t|
+  .center 
+    =t.label "Номер історії пологів"
+    =t.text_field :history_id
+    %br
+    =t.label "Фамілія"
+    =t.text_field :surname
+    %br
+    =t.label "Імя"
+    =t.text_field :fname
+    %br
+    =t.label "По-батькові"
+    =t.text_field :sname
+    =t.submit "update"

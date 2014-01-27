@@ -1,0 +1,6 @@
+=form_for :blood, :url => {action: :update}, method: :put do |b|
+  .center
+    =b.label "number"
+    =b.text_field :number
+    %br
+    =b.submit "Update"

@@ -1,0 +1,17 @@
+%ul{:class => "nav nav-pills"}
+  %li{:class => "active"}
+    =link_to "create", new_woman_path
+
+-@women.each do |t|
+  =t.surname
+  =t.fname
+  =t.sname
+  =link_to "show", woman_path(t)
+  =link_to "edit", edit_woman_path(t)
+  =link_to "delete", t, method: :delete
+  %br
+
+%ul{:class => "pager"}
+  %li
+    =link_to "Попереднє"
+    =link_to "Наступне"

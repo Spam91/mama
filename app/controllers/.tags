@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ApplicationController	application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+BloodsController	bloods_controller.rb	/^class BloodsController < ApplicationController$/;"	c
+DoctorsController	doctors_controller.rb	/^class DoctorsController < ApplicationController$/;"	c
+SessionsController	sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+WomanInfosController	woman_infos_controller.rb	/^class WomanInfosController < ApplicationController$/;"	c
+WomenController	women_controller.rb	/^class WomenController < ApplicationController$/;"	c
+autorize	application_controller.rb	/^  def autorize$/;"	f	class:ApplicationController
+create	bloods_controller.rb	/^  def create$/;"	f	class:BloodsController
+create	doctors_controller.rb	/^  def create$/;"	f	class:DoctorsController
+create	sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	woman_infos_controller.rb	/^  def create$/;"	f	class:WomanInfosController
+create	women_controller.rb	/^  def create$/;"	f	class:WomenController
+current_doctor	application_controller.rb	/^  def current_doctor$/;"	f	class:ApplicationController
+destroy	sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+destroy	women_controller.rb	/^  def destroy$/;"	f	class:WomenController
+edit	bloods_controller.rb	/^  def edit$/;"	f	class:BloodsController
+edit	woman_infos_controller.rb	/^  def edit$/;"	f	class:WomanInfosController
+edit	women_controller.rb	/^  def edit$/;"	f	class:WomenController
+index	doctors_controller.rb	/^  def index$/;"	f	class:DoctorsController
+index	women_controller.rb	/^  def index$/;"	f	class:WomenController
+new	bloods_controller.rb	/^  def new$/;"	f	class:BloodsController
+new	doctors_controller.rb	/^  def new$/;"	f	class:DoctorsController
+new	sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	woman_infos_controller.rb	/^  def new$/;"	f	class:WomanInfosController
+new	women_controller.rb	/^  def new$/;"	f	class:WomenController
+show	doctors_controller.rb	/^  def show$/;"	f	class:DoctorsController
+show	women_controller.rb	/^  def show$/;"	f	class:WomenController
+update	bloods_controller.rb	/^  def update$/;"	f	class:BloodsController
+update	woman_infos_controller.rb	/^  def update$/;"	f	class:WomanInfosController
+update	women_controller.rb	/^  def update$/;"	f	class:WomenController

@@ -1,0 +1,2 @@
+class OgladsController < ApplicationController
+end

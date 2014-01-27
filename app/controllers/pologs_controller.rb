@@ -1,0 +1,2 @@
+class PologsController < ApplicationController
+end

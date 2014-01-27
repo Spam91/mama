@@ -1,0 +1,17 @@
+=render "layouts/tab"
+=form_for :woman, url: {action: :create} do |t|
+  .center
+    =t.label "Номер історії пологів"
+    =t.text_field :history_id, :label => "Номер історії пологів"
+    %br
+    =t.label "Фамілія"
+    =t.text_field :surname
+    %br
+    =t.label "Імя"
+    =t.text_field :fname
+    %br
+    =t.label "По-батькові"
+    =t.text_field :sname
+    %br
+    //=t.select :tel, [[''],['sdf',1],['sfs',2]]
+    =t.submit "save"

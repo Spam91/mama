@@ -1,0 +1,26 @@
+=form_for :doctor, url: {action: :create} do |u|
+	=u.label "Імя"
+	%br
+	=u.text_field :fname
+	%br
+	=u.label "По-батькові"
+	%br
+	=u.text_field :sname
+	%br
+	=u.label "Фамілія"
+	%br
+	=u.text_field :surname
+	%br
+	=u.label "E-mail"
+	%br
+	=u.text_field :email
+	%br
+	=u.label "Пароль"
+	%br
+	=u.password_field :password
+	%br
+	=u.label "Повторіть пароль"
+	%br
+	=u.password_field :password_confirmation
+	%br
+	=u.submit
