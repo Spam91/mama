@@ -1,0 +1,13 @@
+=render "layouts/tab"
+=form_for :problem, :url => {action: :update}, method: :put do |t|
+  .center
+    =t.label "Час смерті"
+    =t.datetime_select :dead
+    %br
+    =t.label "Вади розвитку"
+    =t.text_field :vadrozv
+    %br
+    =t.label "Пологові травми"
+    =t.text_field :pologtravm
+    %br
+    =t.submit "update"

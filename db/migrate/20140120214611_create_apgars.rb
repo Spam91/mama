@@ -8,6 +8,7 @@ class CreateApgars < ActiveRecord::Migration
       t.integer  :tonysmiaziv	#Тонус мязів СС
       t.integer  :reflexy		#Рефлекси
       t.integer  :mark			#Оцінка в балах
+      t.integer  :child_id
       t.timestamps
     end
   end

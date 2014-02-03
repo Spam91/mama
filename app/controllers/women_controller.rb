@@ -17,7 +17,7 @@ class WomenController < ApplicationController
   def create
       @woman = current_doctor.women.build(params[:woman])
       if @woman.save
-        redirect_to new_woman_blood_path(@woman)
+        redirect_to woman_path(@woman)
       else
         render 'new'
       end
@@ -30,7 +30,7 @@ class WomenController < ApplicationController
   def update
     @woman = Woman.find(params[:id])
     if @woman.update_attributes(params[:woman])
-      redirect_to :root
+      redirect_to woman_path(@woman)
     else
       render 'edit'
     end
@@ -40,9 +40,9 @@ class WomenController < ApplicationController
     @woman = Woman.find(params[:id])
     @woman.destroy
     if @woman.errors.empty?
-      redirect_to :root
+      redirect_to women_path
     else
-      redirect_to :root
+      render current_page
     end
   end
 end

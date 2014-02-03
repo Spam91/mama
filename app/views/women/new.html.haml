@@ -2,7 +2,7 @@
 =form_for :woman, url: {action: :create} do |t|
   .center
     =t.label "Номер історії пологів"
-    =t.text_field :history_id, :label => "Номер історії пологів"
+    =t.number_field :history_id
     %br
     =t.label "Фамілія"
     =t.text_field :surname

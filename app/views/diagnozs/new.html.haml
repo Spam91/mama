@@ -1,0 +1,13 @@
+=render "layouts/tab"
+=form_for :d, :url => {:action => :create} do |t|
+  .center
+    =t.label "При госпіталізації МКХ-10"
+    =t.text_field :tohosp
+    %br
+    =t.label "Заключний МКХ-10"
+    =t.text_field :tofin
+    %br
+    =t.label "Клінічний МКХ-10"
+    =t.text_field :toclinik
+    %br
+    =t.submit "Create"

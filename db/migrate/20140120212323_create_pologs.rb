@@ -7,6 +7,8 @@ class CreatePologs < ActiveRecord::Migration
       t.string   :povnevidk		#Повне відкриття
       t.datetime :begpotug		#Початок потуг
       t.integer  :vtratabloods  #Втрата крові в пологах
+      t.integer  :peredchasn    #На якому тижні
+      t.integer  :woman_id
       t.timestamps
     end
   end

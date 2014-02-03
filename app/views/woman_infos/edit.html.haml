@@ -11,7 +11,7 @@
     =t.datetime_select :output
     %br
     =t.label "Ліжко днів"
-    =t.text_field :bed
+    =t.number_field :bed
     %br
     =t.label "Ким направлена"
     =t.text_field :directed
@@ -19,10 +19,13 @@
     =t.label "Місце проживання"
     =t.text_field :home_adress
     %br
-    =t.label "Телефон"
-    =t.text_field :tel
+    =t.label "Телефон мобільний (+38-067-1234567)"
+    =t.telephone_field :tel, pattern: "+[0-9]{2}-[0-9]{3}-[0-9]{7}"
     %br
     =t.label "Інвалід"
-    =t.check_box :invalidity
+    =t.radio_button :invalidity, true
+    %span Так
+    =t.radio_button :invalidity, false
+    %span Ні
     %br
     =t.submit "update"

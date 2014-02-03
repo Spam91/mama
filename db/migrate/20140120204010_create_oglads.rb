@@ -16,6 +16,7 @@ class CreateOglads < ActiveRecord::Migration
       t.integer  :tazvera			#
       t.integer  :okryg				#Окружність живота
       t.integer  :vusdnamatry		#Висота дна матки
+      t.integer  :woman_id
       t.timestamps
     end
   end

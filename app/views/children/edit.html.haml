@@ -1,0 +1,18 @@
+=form_for :blood, :url => {action: :update}, method: :put do |b|
+  .center
+    =b.label "Номер історії новонародженого"
+    =b.number_field :history_id
+    %br
+    //=b.label "Дата народження"
+    //=b.datetime_select :born
+    //%br
+    //=t.label "Фамілія"
+    //=t.text_field :surname
+    //%br
+    //=t.label "Імя"
+    //=t.text_field :fname
+    //%br
+    //=t.label "По-батькові"
+    //=t.text_field :sname
+    //%br
+    =b.submit "Update"

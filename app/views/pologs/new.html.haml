@@ -1,0 +1,25 @@
+=render "layouts/tab"
+=form_for :po, :url => {:action => :create} do |t|
+  .center
+    =t.label "Перейми почались"
+    =t.datetime_select :perbeg
+    %br
+    =t.label "Води відійшли"
+    =t.datetime_select :vodyvid
+    %br
+    =t.label "Якість і кількість вод"
+    =t.text_field :qualityvod
+    %br
+    =t.label "Повне відкриття"
+    =t.text_field :povnevidk
+    %br
+    =t.label "Початок потуг"
+    =t.datetime_select :begpotug
+    %br
+    =t.label "Втрата крові в пологах (мл)"
+    =t.number_field :vtratabloods
+    %br
+    //=t.label "Термін пологів (кількість тижнів)"
+    //=t.number_field :peredchasn
+    //%br
+    =t.submit "Create"

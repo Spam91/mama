@@ -2,6 +2,18 @@ Mama::Application.routes.draw do
   resources :women do
     resources :bloods
     resources :woman_infos
+    resources :diagnozs
+    resources :operations
+    resources :oglads
+    resources :pologs
+
+    resources :children do
+      resources :apgars
+      resources :problems
+      resources :params
+    end
+
+    
   end
   
   resources :doctors

@@ -11,11 +11,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140117170018) do
+ActiveRecord::Schema.define(:version => 20140202123648) do
+
+  create_table "apgars", :force => true do |t|
+    t.datetime "afterbir"
+    t.integer  "sercebitia"
+    t.string   "duhania"
+    t.integer  "colorshkiru"
+    t.integer  "tonysmiaziv"
+    t.integer  "reflexy"
+    t.integer  "mark"
+    t.integer  "woman_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "bloods", :force => true do |t|
     t.integer  "woman_id"
     t.integer  "number"
+    t.boolean  "plusminus"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "children", :force => true do |t|
+    t.integer  "history_id"
+    t.integer  "woman_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "diagnozs", :force => true do |t|
+    t.string   "tohosp"
+    t.string   "tofin"
+    t.string   "toclinik"
+    t.integer  "woman_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -36,6 +66,74 @@ ActiveRecord::Schema.define(:version => 20140117170018) do
     t.string   "single"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+  end
+
+  create_table "oglads", :force => true do |t|
+    t.integer  "zrist"
+    t.integer  "vaga"
+    t.float    "temperature"
+    t.integer  "vagitnist"
+    t.integer  "pology"
+    t.date     "menstryacia"
+    t.date     "vorshiniaplody"
+    t.integer  "tazsp"
+    t.integer  "tazcr"
+    t.integer  "taztr"
+    t.integer  "tazext"
+    t.integer  "tazdiag"
+    t.integer  "tazvera"
+    t.integer  "okryg"
+    t.integer  "vusdnamatry"
+    t.integer  "woman_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "operations", :force => true do |t|
+    t.string   "oname"
+    t.datetime "dateandtime"
+    t.string   "methodzneb"
+    t.string   "problem"
+    t.string   "oper"
+    t.integer  "woman_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "params", :force => true do |t|
+    t.boolean  "stat"
+    t.boolean  "life"
+    t.boolean  "stan"
+    t.integer  "weight"
+    t.integer  "height"
+    t.integer  "head"
+    t.integer  "body"
+    t.integer  "duration"
+    t.string   "zahodu"
+    t.integer  "child_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pologs", :force => true do |t|
+    t.datetime "perbeg"
+    t.datetime "vodyvid"
+    t.string   "qualityvod"
+    t.string   "povnevidk"
+    t.datetime "begpotug"
+    t.integer  "vtratabloods"
+    t.integer  "woman_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "problems", :force => true do |t|
+    t.datetime "dead"
+    t.string   "vadrozv"
+    t.string   "pologtravm"
+    t.integer  "child_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "woman_infos", :force => true do |t|

@@ -1,0 +1,31 @@
+=render "layouts/tab"
+=form_for :og, :url => {:action => :create} do |t|
+  .center
+    =t.label "Зріст (см)"
+    =t.number_field :zrist
+    %br
+    =t.label "Вага (кг)"
+    =t.number_field :vaga
+    %br
+    =t.label "Температура"
+    =t.text_field :temperature
+    %br
+    =t.label "Номер вагітності"
+    =t.number_field :vagitnist
+    %br
+    =t.label "Номер пологів"
+    =t.number_field :pology
+    %br
+    =t.label "Остання менструація"
+    =t.datetime_select :menstryacia
+    %br
+    =t.label "Перше ворушіння плоду"
+    =t.datetime_select :vorshiniaplody
+    %br
+    =t.label "Окружність живота(см)"
+    =t.number_field :okryg
+    %br
+    =t.label "Висота дна матки(мм)"
+    =t.number_field :vusdnamatry
+    %br
+    =t.submit "Create"

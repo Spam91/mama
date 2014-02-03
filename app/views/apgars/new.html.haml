@@ -1,0 +1,25 @@
+=render "layouts/tab"
+=form_for :a, :url => {:action => :create} do |t|
+  .center
+    =t.label "Час після народження"
+    =t.datetime_select :afterbir
+    %br
+    =t.label "Серцебиття"
+    =t.text_field :sercebitia
+    %br
+    =t.label "Дихання СС"
+    =t.text_field :duhania
+    %br
+    =t.label "Колір шкіри СС"
+    =t.text_field :colorshkiru
+    %br
+    =t.label "Тонус мязів СС"
+    =t.text_field :tonysmiaziv
+    %br
+    =t.label "Рефлекси"
+    =t.text_field :reflexy
+    %br
+    =t.label "Оцінка в балах"
+    =t.text_field :mark
+    %br
+    =t.submit "Create"

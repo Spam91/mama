@@ -10,7 +10,7 @@ class BloodsController < ApplicationController
     @woman = Woman.find(params[:woman_id])
     @woman.blood = @blood
     if @blood.save
-      redirect_to new_woman_woman_info_path(@woman)
+      redirect_to woman_path(@woman)
     else
       render 'new'
     end
@@ -24,8 +24,9 @@ class BloodsController < ApplicationController
 
   def update
     @blood = Blood.find(params[:id])
+    @woman = Woman.find(params[:woman_id])
     if @blood.update_attributes(params[:blood])
-      redirect_to women_path
+      redirect_to woman_path(@woman)
     else
       render 'edit'
     end

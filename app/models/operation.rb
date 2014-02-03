@@ -1,3 +1,4 @@
 class Operation < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :oname, :dateandtime, :methodzneb, :problem, :oper
+  belongs_to :woman
 end

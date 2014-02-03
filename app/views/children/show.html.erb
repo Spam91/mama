@@ -1,0 +1,29 @@
+<div>
+	<h4>Параметри дитини</h4>
+	<%unless @child.param%> 
+		<%=link_to "add", new_woman_child_param_path(@woman, @child) %>
+	<%else%>
+		<%=link_to "edit", edit_woman_child_param_path(@woman, @child, @child.param)%>
+		<p>Стать: <%=@child.param.stat %></p>
+		<p>Народився: <%=@child.param.life %></p>
+		<p>Народився: <%=@child.param.stan %></p>
+		<p>Маса: <%=@child.param.weight %> гр.</p>
+		<p>Зріст: <%=@child.param.height %> мм.</p>
+		<p>Окружність голови: <%=@child.param.head %> мм.</p>
+		<p>Окружність грудної клітки: <%=@child.param.body %> мм.</p>
+		<p>Асфіксія тривалість: <%=@child.param.duration %></p>
+		<p>Асфіксія заходи оживлення: <%=@child.param.zahodu %></p>
+	<%end%>
+</div>
+
+<div>
+	<h4>Проблеми дитини</h4>
+	<%unless @child.problem%> 
+		<%=link_to "add", new_woman_child_problem_path(@woman, @child) %>
+	<%else%>
+		<%=link_to "edit", edit_woman_child_problem_path(@woman, @child, @child.problem.id)%>
+		<p>Час смерті: <%=@child.problem.dead %></p>
+		<p>Вади розвитку: <%=@child.problem.vadrozv %></p>
+		<p>Пологові травми: <%=@child.problem.pologtravm %></p>
+	<%end%>
+</div>

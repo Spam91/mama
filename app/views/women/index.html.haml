@@ -3,12 +3,10 @@
     =link_to "create", new_woman_path
 
 -@women.each do |t|
-  =t.surname
-  =t.fname
-  =t.sname
-  =link_to "show", woman_path(t)
-  =link_to "edit", edit_woman_path(t)
-  =link_to "delete", t, method: :delete
+  -name = t.surname + t.fname + t.sname
+  =t.history_id.to_s+"."
+  =link_to name, woman_path(t)
+  =link_to "Редагувати", edit_woman_path(t)
   %br
 
 %ul{:class => "pager"}

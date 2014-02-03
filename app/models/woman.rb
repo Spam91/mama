@@ -18,4 +18,10 @@ class Woman < ActiveRecord::Base
   #belongs_to :marital_status
   has_one :blood
   has_one :woman_info
+  has_one :diagnoz
+  has_one :operation
+  has_one :oglad
+  has_one :polog
+
+  has_many :children
 end
