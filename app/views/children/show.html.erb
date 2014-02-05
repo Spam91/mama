@@ -27,3 +27,19 @@
 		<p>Пологові травми: <%=@child.problem.pologtravm %></p>
 	<%end%>
 </div>
+
+<div>
+	<h4>Оцінка Апгар</h4>
+	<%unless @child.apgar%> 
+		<%=link_to "add", new_woman_child_apgar_path(@woman, @child) %>
+	<%else%>
+		<%=link_to "edit", edit_woman_child_apgar_path(@woman, @child, @child.apgar.id)%>
+		<p>Час після народження: <%=@child.apgar.afterbir %></p>
+		<p>Серцебиття: <%=@child.apgar.sercebitia %></p>
+		<p>Дихання: <%=@child.apgar.duhania %></p>
+		<p>Колір шкіри: <%=@child.apgar.colorshkiru %></p>
+		<p>Тонус мязів: <%=@child.apgar.tonysmiaziv %></p>
+		<p>Рефлекси: <%=@child.apgar.reflexy %></p>
+		<p>Оцінка Апгар: <%=@child.apgar.sercebitia + @child.apgar.duhania + @child.apgar.colorshkiru + @child.apgar.tonysmiaziv + @child.apgar.reflexy%></p>
+	<%end%>
+</div>

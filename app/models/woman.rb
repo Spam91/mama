@@ -14,7 +14,6 @@
 
 class Woman < ActiveRecord::Base
   attr_accessible :surname, :fname, :sname, :history_id
-  belongs_to :doctor
   #belongs_to :marital_status
   has_one :blood
   has_one :woman_info
@@ -22,6 +21,18 @@ class Woman < ActiveRecord::Base
   has_one :operation
   has_one :oglad
   has_one :polog
+
+  validates :surname, presence: true,
+            length: {minimum: 2},
+            length: {maximum: 25}
+  validates :fname, presence: true,
+            length: {minimum: 2},
+            length: {maximum: 25}
+  validates :sname, presence: true,
+            length: {minimum: 2},
+            length: {maximum: 25}
+  validates :history_id, presence: true,
+            uniqueness: true
 
   has_many :children
 end

@@ -1,4 +1,5 @@
 class ChildrenController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def show
   	@child = Child.find(params[:id])
     @woman = Woman.find(params[:woman_id])

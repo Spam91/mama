@@ -1,4 +1,5 @@
 class DiagnozsController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @d = Diagnoz.new
     @woman = Woman.find(params[:woman_id])

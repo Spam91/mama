@@ -5,7 +5,6 @@ class CreateWomen < ActiveRecord::Migration
       t.string   :sname       #По-батькові
       t.string   :surname     #Фамілія
       t.integer  :history_id
-      t.integer  :doctor_id
       t.timestamps
     end
   end

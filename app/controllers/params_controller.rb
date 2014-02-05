@@ -1,4 +1,5 @@
 class ParamsController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @par = Param.new
     @child = Child.find(params[:child_id])

@@ -2,13 +2,13 @@
 =form_for :wi, :url => {action: :update}, method: :put do |t|
   .center
     =t.label "Вік"
-    =t.text_field :age
+    =t.number_field :age
     %br
     =t.label "Поступила"
     =t.datetime_select :input
     %br
     =t.label "Виписана"
-    =t.datetime_select :output
+    =t.datetime_select :output, prompt: true
     %br
     =t.label "Ліжко днів"
     =t.number_field :bed

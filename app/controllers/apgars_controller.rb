@@ -1,4 +1,5 @@
 class ApgarsController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @a = Apgar.new
     @child = Child.find(params[:child_id])

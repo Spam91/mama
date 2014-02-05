@@ -3,11 +3,10 @@ class CreateApgars < ActiveRecord::Migration
     create_table :apgars do |t|
       t.datetime :afterbir		#Час після народження
       t.integer  :sercebitia	#Серцебиття
-      t.string   :duhania		#Дихання СС
+      t.integer  :duhania		#Дихання СС
       t.integer  :colorshkiru	#Колір шкіри СС
       t.integer  :tonysmiaziv	#Тонус мязів СС
       t.integer  :reflexy		#Рефлекси
-      t.integer  :mark			#Оцінка в балах
       t.integer  :child_id
       t.timestamps
     end

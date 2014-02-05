@@ -1,6 +1,6 @@
 class WomenController < ApplicationController
   #skip_before_filter :autorize
-
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
 
   def show
     @woman = Woman.find(params[:id])
@@ -15,7 +15,7 @@ class WomenController < ApplicationController
   end
 
   def create
-      @woman = current_doctor.women.build(params[:woman])
+      @woman = Woman.new(params[:woman])
       if @woman.save
         redirect_to woman_path(@woman)
       else

@@ -1,4 +1,5 @@
 class PologsController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @po = Polog.new
     @woman = Woman.find(params[:woman_id])

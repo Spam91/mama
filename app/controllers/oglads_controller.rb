@@ -1,4 +1,5 @@
 class OgladsController < ApplicationController
+  after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @og = Oglad.new
     @woman = Woman.find(params[:woman_id])

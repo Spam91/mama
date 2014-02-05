@@ -2,24 +2,21 @@
 =form_for :a, :url => {action: :update}, method: :put do |t|
   .center
     =t.label "Час після народження"
-    =t.datetime_select :afterbir
+    =t.select :afterbir, [["1 хв",1],["5 хв",5],["10 хв",10]]
     %br
     =t.label "Серцебиття"
-    =t.text_field :sercebitia
+    =t.select :sercebitia, [[0,0],[1,1],[2,2]]
     %br
     =t.label "Дихання СС"
-    =t.text_field :duhania
+    =t.select :duhania, [[0,0],[1,1],[2,2]]
     %br
     =t.label "Колір шкіри СС"
-    =t.text_field :colorshkiru
+    =t.select :colorshkiru, [[0,0],[1,1],[2,2]]
     %br
     =t.label "Тонус мязів СС"
-    =t.text_field :tonysmiaziv
+    =t.select :tonysmiaziv, [[0,0],[1,1],[2,2]]
     %br
     =t.label "Рефлекси"
-    =t.text_field :reflexy
-    %br
-    =t.label "Оцінка в балах"
-    =t.text_field :mark
+    =t.select :reflexy, [[0,0],[1,1],[2,2]]
     %br
     =t.submit "Update"

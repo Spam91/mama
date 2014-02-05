@@ -4,6 +4,17 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def wr_to_hist_doct
+    @dh = Doctorhistory.new
+    if params[:woman_id]
+      wi = params[:woman_id]
+    else
+      wi = params[:id]
+    end
+    @dh = current_doctor.doctorhistorys.build(date: DateTime.current, act: self.action_name, type: self.controller_name, woman_id: wi)
+    @dh.save
+  end
+
   def autorize
     unless Doctor.find(session[:doctor_id])
       #flash[:notice] = "You are not regist"

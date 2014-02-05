@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140202123648) do
+ActiveRecord::Schema.define(:version => 20140203164846) do
 
   create_table "apgars", :force => true do |t|
     t.datetime "afterbir"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(:version => 20140202123648) do
     t.integer  "tonysmiaziv"
     t.integer  "reflexy"
     t.integer  "mark"
-    t.integer  "woman_id"
+    t.integer  "child_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -36,6 +36,10 @@ ActiveRecord::Schema.define(:version => 20140202123648) do
 
   create_table "children", :force => true do |t|
     t.integer  "history_id"
+    t.datetime "born"
+    t.string   "fname"
+    t.string   "sname"
+    t.string   "surname"
     t.integer  "woman_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -46,6 +50,16 @@ ActiveRecord::Schema.define(:version => 20140202123648) do
     t.string   "tofin"
     t.string   "toclinik"
     t.integer  "woman_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "doctorhistories", :force => true do |t|
+    t.integer  "woman_id"
+    t.string   "act"
+    t.string   "type"
+    t.datetime "date"
+    t.integer  "doctor_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -90,11 +104,11 @@ ActiveRecord::Schema.define(:version => 20140202123648) do
   end
 
   create_table "operations", :force => true do |t|
-    t.string   "oname"
+    t.integer  "oname"
     t.datetime "dateandtime"
     t.string   "methodzneb"
     t.string   "problem"
-    t.string   "oper"
+    t.integer  "oper"
     t.integer  "woman_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
@@ -122,6 +136,7 @@ ActiveRecord::Schema.define(:version => 20140202123648) do
     t.string   "povnevidk"
     t.datetime "begpotug"
     t.integer  "vtratabloods"
+    t.integer  "peredchasn"
     t.integer  "woman_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
