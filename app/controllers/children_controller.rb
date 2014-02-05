@@ -16,8 +16,10 @@ class ChildrenController < ApplicationController
     @woman = Woman.find(params[:woman_id])
     @woman.children << @child
     if @child.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@woman, @child)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -32,8 +34,10 @@ class ChildrenController < ApplicationController
     @child = Child.find(params[:id])
     @woman = Woman.find(params[:woman_id])
     if @child.update_attributes(params[:child])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@woman, @child)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

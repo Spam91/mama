@@ -11,8 +11,10 @@ class DiagnozsController < ApplicationController
     @woman = Woman.find(params[:woman_id])
     @woman.diagnoz = @d
     if @d.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -27,8 +29,10 @@ class DiagnozsController < ApplicationController
     @d = Diagnoz.find(params[:id])
     @woman = Woman.find(params[:woman_id])
     if @d.update_attributes(params[:d])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

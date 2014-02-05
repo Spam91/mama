@@ -11,8 +11,10 @@ class PologsController < ApplicationController
     @woman = Woman.find(params[:woman_id])
     @woman.polog = @po
     if @po.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -27,8 +29,10 @@ class PologsController < ApplicationController
     @po = Polog.find(params[:id])
     @woman = Woman.find(params[:woman_id])
     if @po.update_attributes(params[:po])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

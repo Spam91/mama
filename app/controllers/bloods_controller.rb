@@ -11,8 +11,10 @@ class BloodsController < ApplicationController
     @woman = Woman.find(params[:woman_id])
     @woman.blood = @blood
     if @blood.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -27,8 +29,10 @@ class BloodsController < ApplicationController
     @blood = Blood.find(params[:id])
     @woman = Woman.find(params[:woman_id])
     if @blood.update_attributes(params[:blood])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

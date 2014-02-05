@@ -8,10 +8,10 @@ class SessionsController < ApplicationController
     doctor = Doctor.find_by_fname(params[:fname])
     if doctor && doctor.authenticate(params[:password])
       session[:doctor_id] = doctor.id
-      #flash[:notice] = "Logged in!"
+      flash[:notice] = "Ви успішно виконали вхід"
       redirect_to doctor_path(current_doctor)
     else
-      #flash.now[:error] = "Invalid email or password"
+      flash.now[:error] = "Не правильно введені дані"
       render "new"
     end
   end

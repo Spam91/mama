@@ -11,8 +11,10 @@ class ApgarsController < ApplicationController
     @child = Child.find(params[:child_id])
     @child.apgar = @a
     if @a.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@child.woman_id, @a)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -27,8 +29,10 @@ class ApgarsController < ApplicationController
     @a = Apgar.find(params[:id])
     @child = Child.find(params[:child_id])
     if @a.update_attributes(params[:a])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@child.woman_id, @a)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

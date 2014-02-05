@@ -16,10 +16,10 @@ class DoctorsController < ApplicationController
   def create
     @doctor = Doctor.new(params[:doctor])
     if @doctor.save
-      #flash[:notice] = "Add new user"
+      flash[:notice] = "Add new doctor"
       redirect_to :root
     else
-      #flash.now[:error] = "Invalid input"
+      flash.now[:error] = "Invalid input"
       render "new"
     end
   end

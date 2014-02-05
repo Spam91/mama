@@ -17,8 +17,10 @@ class WomenController < ApplicationController
   def create
       @woman = Woman.new(params[:woman])
       if @woman.save
+        flash[:notice] = "Дані збережено"
         redirect_to woman_path(@woman)
       else
+        flash.now[:error] = "Не правильно введені дані"
         render 'new'
       end
   end
@@ -30,8 +32,10 @@ class WomenController < ApplicationController
   def update
     @woman = Woman.find(params[:id])
     if @woman.update_attributes(params[:woman])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end

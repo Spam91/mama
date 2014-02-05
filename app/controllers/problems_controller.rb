@@ -11,8 +11,10 @@ class ProblemsController < ApplicationController
     @child = Child.find(params[:child_id])
     @child.problem = @problem
     if @problem.save
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(params[:woman_id], params[:child_id])
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'new'
     end
 
@@ -26,8 +28,10 @@ class ProblemsController < ApplicationController
   def update
     @problem = Problem.find(params[:id])
     if @problem.update_attributes(params[:problem])
+      flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(params[:woman_id], params[:child_id])
     else
+      flash.now[:error] = "Не правильно введені дані"
       render 'edit'
     end
   end
