@@ -10,7 +10,8 @@
 #
 
 class Blood < ActiveRecord::Base
-  attr_accessible :number
+  attr_accessible :number, :plusminus, :gemo, :tutr, :alegreac, :rw11, :rw12, :rw21, :rw22, :gonorea1, :gonorea2
+
   belongs_to :woman
 
 end

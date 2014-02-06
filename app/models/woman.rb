@@ -15,12 +15,7 @@
 class Woman < ActiveRecord::Base
   attr_accessible :surname, :fname, :sname, :history_id
   #belongs_to :marital_status
-  has_one :blood
-  has_one :woman_info
-  has_one :diagnoz
-  has_one :operation
-  has_one :oglad
-  has_one :polog
+  
 
   validates :surname, presence: true,
             length: {minimum: 2},
@@ -33,6 +28,12 @@ class Woman < ActiveRecord::Base
             length: {maximum: 25}
   validates :history_id, presence: true,
             uniqueness: true
-
+            
+  has_one :blood
+  has_one :woman_info
+  has_one :diagnoz
+  has_one :operation
+  has_one :oglad
+  has_one :polog
   has_many :children
 end

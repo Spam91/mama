@@ -1,3 +1,4 @@
+# encoding: utf-8
 class WomenController < ApplicationController
   #skip_before_filter :autorize
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]

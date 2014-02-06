@@ -1,3 +1,4 @@
+# encoding: utf-8
 class DoctorsController < ApplicationController
   skip_before_filter :autorize
 

@@ -4,15 +4,15 @@
     =b.number_field :history_id
     %br
     =b.label "Дата народження"
-    =b.datetime_select :born
+    =b.datetime_select :born, prompt: true
     %br
-    =t.label "Фамілія"
-    =t.text_field :surname
+    =b.label "Фамілія"
+    =b.text_field :surname
     %br
-    =t.label "Імя"
-    =t.text_field :fname
+    =b.label "Імя"
+    =b.text_field :fname
     %br
-    =t.label "По-батькові"
-    =t.text_field :sname
+    =b.label "По-батькові"
+    =b.text_field :sname
     %br
     =b.submit "Update"

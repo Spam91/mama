@@ -16,20 +16,28 @@ ActiveRecord::Schema.define(:version => 20140203164846) do
   create_table "apgars", :force => true do |t|
     t.datetime "afterbir"
     t.integer  "sercebitia"
-    t.string   "duhania"
+    t.integer  "duhania"
     t.integer  "colorshkiru"
     t.integer  "tonysmiaziv"
     t.integer  "reflexy"
-    t.integer  "mark"
     t.integer  "child_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
   create_table "bloods", :force => true do |t|
-    t.integer  "woman_id"
     t.integer  "number"
     t.boolean  "plusminus"
+    t.integer  "gemo"
+    t.integer  "tutr"
+    t.string   "alegreac"
+    t.datetime "rw11"
+    t.boolean  "rw12"
+    t.datetime "rw21"
+    t.boolean  "rw22"
+    t.datetime "gonorea1"
+    t.boolean  "gonorea2"
+    t.integer  "woman_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -170,7 +178,6 @@ ActiveRecord::Schema.define(:version => 20140203164846) do
     t.string   "sname"
     t.string   "surname"
     t.integer  "history_id"
-    t.integer  "doctor_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
