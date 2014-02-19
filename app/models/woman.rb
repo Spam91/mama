@@ -31,9 +31,10 @@ class Woman < ActiveRecord::Base
             
   has_one :blood
   has_one :woman_info
-  has_one :diagnoz
   has_one :operation
   has_one :oglad
   has_one :polog
   has_many :children
+
+  has_one :diagnoz
 end

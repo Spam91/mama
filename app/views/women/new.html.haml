@@ -1,8 +1,8 @@
 =render "layouts/tab"
 =form_for :woman, url: {action: :create} do |t|
-  .center
+  .center.row.col-xs-2
     =t.label "Номер історії пологів"
-    =t.number_field :history_id
+    =t.number_field :history_id, class: "form-control"
     %br
     =t.label "Фамілія"
     =t.text_field :surname

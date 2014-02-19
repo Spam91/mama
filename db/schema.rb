@@ -82,14 +82,6 @@ ActiveRecord::Schema.define(:version => 20140203164846) do
     t.datetime "updated_at",      :null => false
   end
 
-  create_table "marital_statuses", :force => true do |t|
-    t.string   "marriage_reg"
-    t.string   "marriage_unreg"
-    t.string   "single"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "oglads", :force => true do |t|
     t.integer  "zrist"
     t.integer  "vaga"

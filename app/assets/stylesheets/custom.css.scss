@@ -6,14 +6,16 @@ body{
 }
 
 .center{
-  margin-top: 20px;
-  display: block;
+  margin-top: 10px;
+  label{
+    width: 300px;
+    text-align: right;
+  }
+  input:focus{
+
+  }
 }
 
-.center label{
-  width: 300px;
-  text-align: right;
-}
 .navbar-inverse{
   margin-bottom: 0;
 }
@@ -44,4 +46,84 @@ body{
 .alert-error{
   color: red;
   text-align: center;
+}
+//-----LIST
+
+
+.list-group{
+  li.list-group-item:hover{
+    background-color: lightgrey;
+  }
+  li.list-group-item{
+    h4{
+      a{
+
+      }
+      .right{
+        float: right;
+        font-size: 10pt;
+      }
+
+    }
+  }
+  p.list-group-item-text{
+
+  }
+}
+
+.container{
+  a:hover{
+    color: orangered;
+  }
+}
+
+//-----button
+//-----grid-table
+table.grid-table{
+  width: 100%;
+  caption{
+    h2{
+      margin: 0;
+    }
+    h4{
+      margin: 0;
+    }
+  }
+  tr{
+    td{
+      vertical-align: top;
+      width: 50%;
+      padding: 10px;
+      .grid-item{
+        border: 1px solid lightgrey;
+        border-radius: 5px 5px 5px 5px;
+        h4{
+          text-align: center;
+          background-color: lightgrey;
+          margin: 0 0 0 0;
+          padding: 2px 0 2px 0;
+          .right{
+            float: right;
+          }
+        }
+        p{
+          margin: 0 0 0 5px;
+        }
+      }
+      .grid-item.table-children{
+        h4{
+          background-color: black;
+          color: #ffffff;
+        }
+        h5{
+          background-color: lightgrey;
+          padding: 2px 10px 2px 10px;
+          margin: 15px;
+          .right{
+            float: right;
+          }
+        }
+      }
+    }
+  }
 }

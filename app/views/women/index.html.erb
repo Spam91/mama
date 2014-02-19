@@ -1,0 +1,37 @@
+<p class="but-right">
+<ul class="nav nav-pills">
+  <li class="active">
+    <a href="<%= new_woman_path %>">create</a>
+  </li>
+</ul>
+</p>
+
+<div class="list-group">
+  <%- @women.each do |t|
+    name = t.history_id.to_s + ".   " + t.surname + t.fname + t.sname
+  %>
+    <li class="list-group-item">
+      <h4>
+        <a href="<%= woman_path(t) %>">
+          <%= name %>
+        </a>
+        <div class="right">
+          <a href="<%= edit_woman_path(t) %>">Редагувати</a>
+        </div>
+      </h4>
+
+      <p class="list-group-item-text">
+
+      </p>
+    </li>
+
+  <% end %>
+</div>
+<input type="text" data-behaviour='datepicker' >
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('[data-behaviour~=datepicker]').datepicker();
+    })
+</script>
+

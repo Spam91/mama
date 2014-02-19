@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-datepicker
 //= require_tree .
+
+//$( document ).ready(function() {
+//  $('a').css("color", "red");
+//..$
+//});
+
+$(document).ready(function(){
+    $('[data-behaviour~=datepicker]').datepicker();
+    })

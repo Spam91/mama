@@ -1,104 +1,119 @@
-<h2 class="right">Історія №<%= @woman.history_id%></h2>
-<h3 class="center"><%= @woman.fname%><%= @woman.sname%><%= @woman.surname%></h3>
+<table class="grid-table">
+  <caption>
+    <h4 class="right">Історія пологів№<%= @woman.history_id%></h4>
+    <h2 class="center"><%= @woman.fname%> <%= @woman.sname%> <%= @woman.surname%></h2>
+  </caption>
+  <tr>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.blood %>
+            <h4>Кров<div class="right"><%=link_to "+", new_woman_blood_path(@woman)%></div></h4>
+        <%else%>
+            <h4>Кров<div class="right"><%=link_to "+", edit_woman_blood_path(@woman, @woman.blood.id)%></div></h4>
+            <p>Група крові: <%=@woman.blood.number%></p>
+        <%end%>
+      </div>
+    </td>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.woman_info %>
+            <h4>Загальна інформація <div class="right"><%=link_to "+", new_woman_woman_info_path(@woman) %></div></h4>
+        <%else%>
+            <h4>Загальна інформація <div class="right"> <%=link_to "+", edit_woman_woman_info_path(@woman, @woman.woman_info.id) %></div></h4>
+            <p>Вік: <%=@woman.woman_info.age%></p>
+            <p>Поступила: <%=@woman.woman_info.input%></p>
+            <p>Виписана: <%=@woman.woman_info.output%></p>
+            <p>Ліжко днів: <%=@woman.woman_info.bed%></p>
+            <p>Ким направлена: <%=@woman.woman_info.directed%></p>
+            <p>Місце проживання: <%=@woman.woman_info.home_adress%></p>
+            <p>Телефон мобільний: <%=@woman.woman_info.tel%></p>
+            <p>Інвалід: <%=@woman.woman_info.invalidity%></p>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.diagnoz%>
+            <h4>Діагнози <div class="right"><%=link_to "+", new_woman_diagnoz_path(@woman) %></div></h4>
+        <%else%>
+            <h4>Діагнози <div class="right"> <%=link_to "+", edit_woman_diagnoz_path(@woman, @woman.diagnoz.id)%></div></h4>
+            <p>При госпіталізації МКХ-10: <%=@woman.diagnoz.tohosp %></p>
+            <p>Заключний МКХ-10: <%=@woman.diagnoz.tofin %></p>
+            <p>Клінічний МКХ-10: <%=@woman.diagnoz.toclinik %></p>
+        <%end%>
+      </div>
+    </td>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.operation%>
+            <h4>Операції <div class="right"><%=link_to "+", new_woman_operation_path(@woman) %></div></h4>
+        <%else%>
+            <h4>Операції <div class="right"><%=link_to "+", edit_woman_operation_path(@woman, @woman.operation.id)%></div></h4>
+            <p>Найменування операції: <%=@woman.operation.oname %></p>
+            <p>Дата і час: <%=@woman.operation.dateandtime %></p>
+            <p>Метод знеболювання: <%=@woman.operation.methodzneb %></p>
+            <p>Ускладнення: <%=@woman.operation.problem %></p>
+            <p>Оперував: <%=@woman.operation.oper %></p>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.oglad%>
+            <h4>Огляд <div class="right"><%=link_to "+", new_woman_oglad_path(@woman) %></div></h4>
+        <%else%>
+            <h4>Огляд <div class="right"><%=link_to "+", edit_woman_oglad_path(@woman, @woman.oglad.id)%></div></h4>
+            <p>Зріст: <%=@woman.oglad.zrist %> см</p>
+            <p>Вага: <%=@woman.oglad.vaga %>кг</p>
+            <p>Температура: <%=@woman.oglad.temperature %> С</p>
+            <p>Номер вагітності: <%=@woman.oglad.vagitnist %></p>
+            <p>Номер пологів: <%=@woman.oglad.pology %></p>
+            <p>Остання менструація: <%=@woman.oglad.menstryacia %></p>
+            <p>Перше ворушіння плоду: <%=@woman.oglad.vorshiniaplody %></p>
+            <p>Окружність живота: <%=@woman.oglad.okryg %> см</p>
+            <p>Висота дна матки: <%=@woman.oglad.vusdnamatry %> мм</p>
+        <%end%>
+      </div>
+    </td>
+    <td>
+      <div class="grid-item">
+        <%unless @woman.polog%>
+        <h4>Пологи <div class="right"><%=link_to "+", new_woman_polog_path(@woman) %></div></h4>
+        <%else%>
+            <h4>Пологи <div class="right"><%=link_to "+", edit_woman_polog_path(@woman, @woman.polog.id)%></div></h4>
+            <p>Перейми почались: <%=@woman.polog.perbeg %></p>
+            <p>Води відійшли: <%=@woman.polog.vodyvid %></p>
+            <p>Якість і кількість вод: <%=@woman.polog.qualityvod %></p>
+            <p>Повне відкриття: <%=@woman.polog.povnevidk %></p>
+            <p>Початок потуг: <%=@woman.polog.begpotug %></p>
+            <p>Втрата крові в пологах: <%=@woman.polog.vtratabloods %> мл.</p>
+            <p>Термін пологів: <%=@woman.polog.peredchasn %> тижнів</p>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <div class="grid-item table-children">
+        <h4>Діти <div class="right"><%=link_to "+", new_woman_child_path(@woman) %></div></h4>
+        <%-@woman.children.each do |c| %>
+            <h5>№: <%=c.history_id%>
+              <div class="right">
+                <%= link_to "edit", edit_woman_child_path(@woman, c) %>
+                <%=link_to "show", woman_child_path(@woman, c)%>
+              </div>
+            </h5>
+            <!--<p>Фамілія: </p>
+            <p>Імя: </p>
+            <p>По-батькові: </p>-->
 
-<div>
-	<h4>Кров</h4>
-	<%unless @woman.blood %>
-		<%=link_to "add", new_woman_blood_path(@woman)%>
-	<%else%>
-		<%=link_to "edit", edit_woman_blood_path(@woman, @woman.blood.id)%>
-		<p>Група крові: <%=@woman.blood.number%></p>
-	<%end%>
-</div>
 
-<div>
-	<h4>Загальна інформація </h4>
-	<%unless @woman.woman_info %>
-		<%=link_to "add", new_woman_woman_info_path(@woman) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_woman_info_path(@woman, @woman.woman_info.id) %>
-		<p>Вік: <%=@woman.woman_info.age%></p>
-		<p>Поступила: <%=@woman.woman_info.input%></p>
-		<p>Виписана: <%=@woman.woman_info.output%></p>
-		<p>Ліжко днів: <%=@woman.woman_info.bed%></p>
-		<p>Ким направлена: <%=@woman.woman_info.directed%></p>
-		<p>Місце проживання: <%=@woman.woman_info.home_adress%></p>
-		<p>Телефон мобільний: <%=@woman.woman_info.tel%></p>
-		<p>Інвалід: <%=@woman.woman_info.invalidity%></p>
-	<%end%>
-</div>
-
-<div>
-	<h4>Діагнози</h4>
-	<%unless @woman.diagnoz%> 
-		<%=link_to "add", new_woman_diagnoz_path(@woman) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_diagnoz_path(@woman, @woman.diagnoz.id)%>
-		<p>При госпіталізації МКХ-10: <%=@woman.diagnoz.tohosp %></p>
-		<p>Заключний МКХ-10: <%=@woman.diagnoz.tofin %></p>
-		<p>Клінічний МКХ-10: <%=@woman.diagnoz.toclinik %></p>
-	<%end%>
-</div>
-
-<div>
-	<h4>Операції</h4>
-	<%unless @woman.operation%> 
-		<%=link_to "add", new_woman_operation_path(@woman) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_operation_path(@woman, @woman.operation.id)%>
-		<p>Найменування операції: <%=@woman.operation.oname %></p>
-		<p>Дата і час: <%=@woman.operation.dateandtime %></p>
-		<p>Метод знеболювання: <%=@woman.operation.methodzneb %></p>
-		<p>Ускладнення: <%=@woman.operation.problem %></p>
-		<p>Оперував: <%=@woman.operation.oper %></p>
-	<%end%>
-</div>
-
-<div>
-	<h4>Огляд</h4>
-	<%unless @woman.oglad%> 
-		<%=link_to "add", new_woman_oglad_path(@woman) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_oglad_path(@woman, @woman.oglad.id)%>
-		<p>Зріст: <%=@woman.oglad.zrist %> см</p>
-		<p>Вага: <%=@woman.oglad.vaga %>кг</p>
-		<p>Температура: <%=@woman.oglad.temperature %> С</p>
-		<p>Номер вагітності: <%=@woman.oglad.vagitnist %></p>
-		<p>Номер пологів: <%=@woman.oglad.pology %></p>
-		<p>Остання менструація: <%=@woman.oglad.menstryacia %></p>
-		<p>Перше ворушіння плоду: <%=@woman.oglad.vorshiniaplody %></p>
-		<p>Окружність живота: <%=@woman.oglad.okryg %> см</p>
-		<p>Висота дна матки: <%=@woman.oglad.vusdnamatry %> мм</p>
-	<%end%>
-</div>
-
-<div>
-	<h4>Пологи</h4>
-	<%unless @woman.polog%> 
-		<%=link_to "add", new_woman_polog_path(@woman) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_polog_path(@woman, @woman.polog.id)%>
-		<p>Перейми почались: <%=@woman.polog.perbeg %></p>
-		<p>Води відійшли: <%=@woman.polog.vodyvid %></p>
-		<p>Якість і кількість вод: <%=@woman.polog.qualityvod %></p>
-		<p>Повне відкриття: <%=@woman.polog.povnevidk %></p>
-		<p>Початок потуг: <%=@woman.polog.begpotug %></p>
-		<p>Втрата крові в пологах: <%=@woman.polog.vtratabloods %> мл.</p>
-		<p>Термін пологів: <%=@woman.polog.peredchasn %> тижнів</p>
-	<%end%>
-</div>
-
-<div>
-	<h4>Діти</h4>
-		<%=link_to "add", new_woman_child_path(@woman) %>
-		<br>
-		<%-@woman.children.each do |c| %>
-			
-		<p>Номер історії новонародженого: <%=c.history_id%></p>
-		<!--<p>Фамілія: </p>
-		<p>Імя: </p>
-		<p>По-батькові: </p>-->
-			<%=link_to "show", woman_child_path(@woman, c)%>
-			<br>
-		<%end%>
-</div>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+</table>
