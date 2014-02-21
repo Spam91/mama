@@ -33,18 +33,7 @@
     </td>
   </tr>
   <tr>
-    <td>
-      <div class="grid-item">
-        <%unless @woman.diagnoz%>
-            <h4>Діагнози <div class="right"><%=link_to "+", new_woman_diagnoz_path(@woman) %></div></h4>
-        <%else%>
-            <h4>Діагнози <div class="right"> <%=link_to "+", edit_woman_diagnoz_path(@woman, @woman.diagnoz.id)%></div></h4>
-            <p>При госпіталізації МКХ-10: <%=@woman.diagnoz.tohosp %></p>
-            <p>Заключний МКХ-10: <%=@woman.diagnoz.tofin %></p>
-            <p>Клінічний МКХ-10: <%=@woman.diagnoz.toclinik %></p>
-        <%end%>
-      </div>
-    </td>
+
     <td>
       <div class="grid-item">
         <%unless @woman.operation%>

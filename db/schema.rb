@@ -57,7 +57,7 @@ ActiveRecord::Schema.define(:version => 20140203164846) do
     t.string   "tohosp"
     t.string   "tofin"
     t.string   "toclinik"
-    t.integer  "woman_id"
+    t.integer  "oglad_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

@@ -1,12 +1,7 @@
 class Oglad < ActiveRecord::Base
-  attr_accessible :zrist, :vaga, :temperature, :vagitnist, :pology, :menstryacia, :vorshiniaplody, :okryg, :vusdnamatry
-
-  validates :zrist, numericality: { only_integer: true }
-  validates :vaga, numericality: { only_integer: true }
-  validates :vagitnist, numericality: { only_integer: true }
-  validates :pology, numericality: { only_integer: true }
-  validates :okryg, numericality: { only_integer: true }
-  validates :vusdnamatry, numericality: { only_integer: true }
+  attr_accessible :zrist, :vaga, :temperature, :vagitnist, :pology, :menstryacia, :vorshiniaplody, :okryg, :vusdnamatry, :diagnozs_attributes
 
   belongs_to :woman
+  has_many :diagnozs, :dependent => :destroy
+  accepts_nested_attributes_for :diagnozs, :reject_if => lambda { |a| a[:tohosp].blank? }, :allow_destroy => true
 end

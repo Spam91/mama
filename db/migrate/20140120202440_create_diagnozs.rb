@@ -4,7 +4,7 @@ class CreateDiagnozs < ActiveRecord::Migration
       t.string   :tohosp          #При госпіталізації МКХ-10
       t.string   :tofin 		  #Заключний МКХ-10
       t.string   :toclinik 		  #Клінічний МКХ-10
-      t.integer  :woman_id
+      t.integer  :oglad_id
       t.timestamps
     end
   end

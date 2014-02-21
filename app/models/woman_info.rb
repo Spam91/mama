@@ -18,14 +18,13 @@
 class WomanInfo < ActiveRecord::Base
   attr_accessible :age, :input, :output, :bed, :directed, :home_adress, :tel, :invalidity
 
-  validates :age, numericality: { only_integer: true }
-  validates :bed, numericality: { only_integer: true }
   validates :home_adress,
             length: {minimum: 1},
             length: {maximum: 250}
   validates :directed,
             length: {minimum: 1},
             length: {maximum: 250}
-  
+
   belongs_to :woman
+
 end

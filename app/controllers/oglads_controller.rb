@@ -2,16 +2,19 @@
 class OgladsController < ApplicationController
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @og = Oglad.new
+    @oglad = Oglad.new
+    3.times {@oglad.diagnozs.build}
     @woman = Woman.find(params[:woman_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-    @og = Oglad.new(params[:og])
+
+    @oglad = Oglad.new(params[:oglad])
+
     @woman = Woman.find(params[:woman_id])
-    @woman.oglad = @og
-    if @og.save
+    @woman.oglad = @oglad
+    if @oglad.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else

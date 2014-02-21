@@ -1,5 +1,5 @@
 =render "layouts/tab"
-=form_for :og, :url => {action: :update}, method: :put do |t|
+=form_for @oglad, :url => {action: :update}, method: :put do |t|
   .center
     =t.label "Зріст (см)"
     =t.number_field :zrist

@@ -6,8 +6,8 @@ class CreateOglads < ActiveRecord::Migration
       t.float    :temperature		#Температура
       t.integer	 :vagitnist			#Номер вагітності
       t.integer  :pology			#Номер пологів
-      t.date     :menstryacia		#Остання менструація
-      t.date     :vorshiniaplody	#Перше ворушіння плоду
+      t.date :menstryacia		#Остання менструація
+      t.date :vorshiniaplody	#Перше ворушіння плоду
       t.integer  :tazsp				#
       t.integer  :tazcr				#
       t.integer  :taztr				#

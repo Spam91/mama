@@ -36,5 +36,4 @@ class Woman < ActiveRecord::Base
   has_one :polog
   has_many :children
 
-  has_one :diagnoz
 end

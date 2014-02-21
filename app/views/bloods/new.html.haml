@@ -1,5 +1,5 @@
 =render "layouts/tab"
-=form_for :blood, :url => {:action => :create} do |b|
+=form_for @blood, :url => {:action => :create} do |b|
   .center
     =b.label "Група крові"
     =b.number_field :number

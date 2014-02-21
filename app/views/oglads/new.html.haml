@@ -1,5 +1,5 @@
 =render "layouts/tab"
-=form_for :og, :url => {:action => :create} do |t|
+=form_for @oglad, :url => {:action => :create} do |t|
   .center
     =t.label "Зріст (см)"
     =t.number_field :zrist
@@ -28,4 +28,11 @@
     =t.label "Висота дна матки(мм)"
     =t.number_field :vusdnamatry
     %br
+    .pid
+      =t.fields_for :diagnozs do |d|
+        %p{class: "fields"}
+          =d.text_field :tohosp
+          //=link_to_remove_fields "remove", d
+          =link_to_remove_field "remove", d
+          =link_to_function "add", "add_field(this)"
     =t.submit "Create"
