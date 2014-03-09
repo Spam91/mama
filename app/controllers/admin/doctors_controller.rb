@@ -1,21 +1,20 @@
 # encoding: utf-8
-class DoctorsController < ApplicationController
-  skip_before_filter :autorize
+class Admin::DoctorsController < ApplicationController
 
   def index
-    @doctor = Doctor.all
+    @doctor = Admin::Doctor.all
   end
 
   def show
-    @doctor = Doctor.find(params[:id])
+    @doctor = Admin::Doctor.find(params[:id])
   end
 
   def new
-    @doctor = Doctor.new
+    @doctor = Admin::Doctor.new
   end
 
   def create
-    @doctor = Doctor.new(params[:doctor])
+    @doctor = Admin::Doctor.new(params[:doctor])
     if @doctor.save
       flash[:notice] = "Add new doctor"
       redirect_to :root

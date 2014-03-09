@@ -1,0 +1,2 @@
+module Admin::MkhGroupsHelper
+end

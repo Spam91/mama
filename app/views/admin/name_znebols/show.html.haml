@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Code:
+  = @admin_name_znebol.code
+%p
+  %b Name:
+  = @admin_name_znebol.name
+
+= link_to 'Edit', edit_admin_name_znebol_path(@admin_name_znebol)
+\|
+= link_to 'Back', admin_name_znebols_path

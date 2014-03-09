@@ -1,5 +1,7 @@
 # encoding: utf-8
 class OperationsController < ApplicationController
+  skip_before_filter :role_doc, except: [:delete, :destroy]
+  skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @o = Operation.new
@@ -10,7 +12,7 @@ class OperationsController < ApplicationController
     #@woman = Woman.new(params[:woman])
     @o = Operation.new(params[:o])
     @woman = Woman.find(params[:woman_id])
-    @woman.operation = @o
+    @woman.operations << @o
     if @o.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)

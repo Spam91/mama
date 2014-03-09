@@ -1,6 +1,8 @@
 # encoding: utf-8
 class WomenController < ApplicationController
   #skip_before_filter :autorize
+  skip_before_filter :role_doc, except: [:delete, :destroy]
+  skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
 
   def show
@@ -11,8 +13,17 @@ class WomenController < ApplicationController
     @women = Woman.all
   end
 
+  def firstpage
+    @woman = Woman.find(params[:woman_id])
+  end
+
   def new
     @woman = Woman.new
+    if Woman.last.blank?
+      @last_h_id = 0
+    else
+      @last_h_id = Woman.order("history_id ASC").last.history_id
+    end
   end
 
   def create

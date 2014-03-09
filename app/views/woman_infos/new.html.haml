@@ -5,10 +5,10 @@
     =t.number_field :age
     %br
     =t.label "Поступила"
-    =t.datetime_select :input
+    =t.date_field :input
     %br
     =t.label "Виписана"
-    =t.datetime_select :output, prompt: true
+    =t.date_field :output, prompt: true
     %br
     =t.label "Ліжко днів"
     =t.number_field :bed

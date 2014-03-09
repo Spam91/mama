@@ -4,10 +4,11 @@
     =b.number_field :history_id
     %br
     =b.label "Дата народження"
-    =b.datetime_select :born, prompt: true
+    =b.date_field :born, prompt: true
+    //=b.text_field :born, "data-behaviour" => "datepicker"
     %br
     =b.label "Фамілія"
-    =b.text_field :surname
+    =b.text_field :surname, value: @woman.surname
     %br
     =b.label "Імя"
     =b.text_field :fname

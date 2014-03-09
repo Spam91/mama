@@ -1,0 +1,108 @@
+<%= fph(@woman.fname) %>
+<style type="text/css">
+    <!--
+    p {margin: 0; padding: 0;}	.ft10{font-size:13px;font-family:Times;color:#000000;}
+    .ft11{font-size:5px;font-family:Times;color:#000000;}
+    .ft12{font-size:18px;font-family:Times;color:#000000;}
+    .ft13{font-size:7px;font-family:Times;color:#000000;}
+    .ft14{font-size:11px;font-family:Times;color:#000000;}
+    .ft15{font-size:9px;font-family:Times;color:#000000;}
+    .ft16{font-size:0px;font-family:Times;color:#000000;}
+    .ft17{font-size:16px;font-family:Times;color:#000000;}
+    .ft18{font-size:16px;font-family:Times;color:#000000;}
+    .ft19{font-size:2px;font-family:Times;color:#000000;}
+    .ft110{font-size:5px;line-height:8px;font-family:Times;color:#000000;}
+    .ft111{font-size:13px;line-height:22px;font-family:Times;color:#000000;}
+    .ft112{font-size:13px;line-height:20px;font-family:Times;color:#000000;}
+    .ft113{font-size:13px;line-height:21px;font-family:Times;color:#000000;}
+    .ft114{font-size:13px;line-height:17px;font-family:Times;color:#000000;}
+    .ft115{font-size:13px;line-height:19px;font-family:Times;color:#000000;}
+    -->
+</style>
+<div id="page1-div" style="position:relative;width:892px;height:1263px;">
+  <p style="position:absolute;top:1187px;left:85px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:43px;left:85px;white-space:nowrap" class="ft110">&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;<br/>&#160;</p>
+  <p style="position:absolute;top:121px;left:85px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:138px;left:310px;white-space:nowrap" class="ft12">ІСТОРІЯ&#160;ПОЛОГІВ&#160;№&#160;<%= fph(@woman.history_id) %>_____&#160;</p>
+  <p style="position:absolute;top:162px;left:85px;white-space:nowrap" class="ft11">&#160;</p>
+  <p style="position:absolute;top:176px;left:85px;white-space:nowrap" class="ft111">Прізвище,&#160;ім’я,&#160;по&#160;батькові&#160;<%= fph(@woman.fname+" " + @woman.sname+" "+ @woman.surname+" ") %>____________________________________________________________Вік&#160;<%= fph(@woman.woman_info.age) %>_______&#160;років&#160;<br/>Національність&#160;_____________________________________________________________________________________&#160;<br/>Поступила&#160;«<span class="vstavka"><%= @woman.woman_info.input.day %></span>_____» <span class="vstavka"><%= @woman.woman_info.input.strftime("%B") %> <%= @woman.woman_info.input.year %></span>_______________________________р.&#160;<br/>
+    <span class="vstavka"><%= @woman.woman_info.input.hour %></span>___________________годин&#160;<span class="vstavka"><%= @woman.woman_info.input.min %></span>________________хвилин&#160;<br/>Вибула&#160;« ______»&#160;__________________ &#160;_______р.&#160;<br/>Проведено&#160;ліжко-днів&#160;________________________&#160;<br/>Палата&#160;№&#160;________________&#160;<br/>&#160;</p>
+  <p style="position:absolute;top:221px;left:476px;white-space:nowrap" class="ft111">Група&#160;крові&#160;_____________&#160;Гемоглобін&#160;<br/>Резус&#160;-&#160;приналежність&#160;___________________________&#160;<br/>Титр&#160;антитіл&#160;___________________________________&#160;<br/>Алергічні&#160;&#160;реакції&#160; ______________________________&#160;<br/>RW&#160;–&#160;(число,&#160;місяць,&#160;рік)&#160;________________________&#160;<br/>Результат&#160;досліджень&#160;&#160;на&#160;гонорею_________________&#160;</p>
+  <p style="position:absolute;top:359px;left:85px;white-space:nowrap" class="ft111">Ким&#160;направлена&#160;____________________________________________________________________________________&#160;<br/>Постійне&#160;місце&#160;проживання:&#160;місто,&#160;село&#160;(підкреслити)&#160;___________________________________________________&#160;<br/>Адреса: ____________________________________________________________________________________________&#160;<br/>___________________________________________________________________________телефон&#160;________________&#160;<br/>Сімейний&#160;стан:&#160;шлюб&#160;зареєстрований,&#160;не&#160;зареєстрований;&#160;одинока&#160;(підкреслити).&#160;<br/>Місце&#160;роботи,&#160;професія,&#160;посада&#160;вагітної,&#160;родильниці&#160;(породіллі)&#160;___________________________________________&#160;<br/>___________________________________________________________________________________________________&#160;<br/>Відноситься&#160;до&#160;1-3&#160;групи&#160;диспансерного&#160;обліку&#160;потерпілих&#160;внаслідок&#160;аварії&#160;на&#160;ЧАЕС:&#160;так,&#160;ні&#160;(підкреслити).&#160;<br/>Категорія&#160;1,&#160;2,&#160;3&#160;(підкреслити),&#160;серія&#160;посвідчення&#160;______________&#160;№&#160;_______________________________________&#160;<br/>Відвідувала&#160;лікаря&#160;&#160;(акушерку)&#160;під&#160;час&#160;вагітності:&#160;так,&#160;ні&#160;(підкреслити)&#160;<br/>Скільки&#160;разів&#160;&#160;________________&#160;Найменування&#160;консультації&#160;_____________________________________________&#160;<br/>Діагноз&#160;при&#160;госпіталізації&#160;____________________________________________________________________________&#160;<br/>Діагноз&#160;клінічний&#160;___________________________________________________________&#160;<br/>Діагноз&#160;заключний&#160;__________________________________________________________&#160;<br/>Ускладнення&#160;в&#160;пологах,&#160;після&#160;пологів&#160;__________________________________________________________________&#160;<br/>___________________________________________________________________________________________________&#160;<br/>Хірургічні&#160;операції,&#160;методи&#160;знеболювання,&#160;ускладнення&#160;</p>
+  <p style="position:absolute;top:743px;left:127px;white-space:nowrap" class="ft10">Найменування&#160;операції&#160;</p>
+  <p style="position:absolute;top:743px;left:354px;white-space:nowrap" class="ft10">Дата,&#160;час&#160;</p>
+  <p style="position:absolute;top:743px;left:479px;white-space:nowrap" class="ft10">Метод&#160;знеболювання&#160;</p>
+  <p style="position:absolute;top:743px;left:696px;white-space:nowrap" class="ft10">Ускладнення&#160;</p>
+  <p style="position:absolute;top:760px;left:93px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:760px;left:327px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:760px;left:455px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:760px;left:655px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:778px;left:93px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:778px;left:327px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:778px;left:455px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:778px;left:655px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:802px;left:571px;white-space:nowrap" class="ft10">Оперував&#160;__________________&#160;(підпис)&#160;</p>
+  <p style="position:absolute;top:824px;left:85px;white-space:nowrap" class="ft111">Надання&#160;інших&#160;видів&#160;медичної&#160;допомоги&#160;&#160;_______________________________________________________________&#160;<br/>Вибула:&#160;виписана,&#160;переведена,&#160;померла:&#160;вагітною,&#160;під&#160;час&#160;пологів,&#160;після&#160;пологів&#160;(підкреслити)&#160;</p>
+  <p style="position:absolute;top:868px;left:93px;white-space:nowrap" class="ft10">Зріст&#160;_________см&#160;&#160; &#160;&#160;&#160;Вага&#160;___________ &#160;&#160; &#160;&#160;Т</p>
+  <p style="position:absolute;top:866px;left:383px;white-space:nowrap" class="ft13">о</p>
+  <p style="position:absolute;top:868px;left:388px;white-space:nowrap" class="ft10">&#160;_____________&#160;</p>
+  <p style="position:absolute;top:889px;left:93px;white-space:nowrap" class="ft112">Яка&#160;вагітність&#160;(за&#160;№)&#160;&#160;__________ &#160;&#160;&#160;пологи&#160;(за&#160;№)__________&#160;<br/>Остання&#160;менструація&#160;_________________________________&#160;<br/>Перше&#160;ворушіння&#160;плоду&#160;_______________________________&#160;<br/>Таз: &#160; &#160;D.&#160;Sp.&#160;__________&#160;&#160;&#160;D. &#160;Cr __________ &#160;D.Tr&#160;_________&#160;<br/>&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160;С. ext&#160;__________&#160;С.dіag&#160;___________&#160;&#160;T.&#160;vera________&#160;<br/>Окружність&#160;живота&#160;_________см.&#160;Висота&#160;дна&#160;матки&#160;_____см&#160;<br/>Положення&#160;плоду,&#160;позиція&#160;і&#160;вид&#160;_________________________&#160;<br/>Серцебиття&#160;плоду,&#160;місце,&#160;число&#160;ударів____________________&#160;<br/>Передлежача&#160;частина&#160;__________________________________&#160;<br/>Де&#160;знаходиться&#160;_______________________________________&#160;<br/>Пологова&#160;діяльність&#160;___________________________________&#160;<br/>Передбачувана&#160;вага&#160;плоду&#160;______________________________&#160;<br/>Лікар_________________&#160;Акушерка&#160;_____________________&#160;</p>
+  <p style="position:absolute;top:869px;left:610px;white-space:nowrap" class="ft14">ПЕРЕБІГ&#160;ПОЛОГІВ&#160;</p>
+  <p style="position:absolute;top:884px;left:508px;white-space:nowrap" class="ft114">Перейми&#160;почались&#160;__________________________&#160;<br/>Води&#160;відійшли&#160;_____________________________&#160;<br/>Якість&#160;і&#160;кількість&#160;&#160;вод&#160;_______________________&#160;<br/>Повне&#160;відкриття&#160;____________________________&#160;<br/>Початок&#160;потуг&#160;_____________________________&#160;<br/>Дитина&#160;народилася:&#160;<br/>Перша&#160;__________дата&#160;_______годин_______хв.&#160;<br/>Жива,&#160;мертва,&#160;голівкою,&#160;сідницями,&#160;ніжками&#160; &#160;&#160; &#160;&#160;&#160;</p>
+  <p style="position:absolute;top:1019px;left:508px;white-space:nowrap" class="ft10">&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;</p>
+  <p style="position:absolute;top:1022px;left:748px;white-space:nowrap" class="ft15">(підкреслити)</p>
+  <p style="position:absolute;top:1019px;left:818px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:1036px;left:508px;white-space:nowrap" class="ft114">Стать&#160;ч&#160;-1,&#160;ж&#160;-2&#160;&#160;&#160; &#160;&#160;маса&#160;(вага)&#160;____зріст______см.&#160;<br/>Окружність&#160;голівки&#160;___см.&#160;грудної&#160;клітки&#160;___см.&#160;<br/>Друга_________&#160;дата&#160;_______годин&#160;________&#160;хв.&#160;<br/>Жива,&#160;мертва,&#160;голівкою,&#160;сідницями,&#160;ніжками&#160; &#160;&#160; &#160;&#160;&#160;</p>
+  <p style="position:absolute;top:1102px;left:508px;white-space:nowrap" class="ft10">&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;</p>
+  <p style="position:absolute;top:1105px;left:748px;white-space:nowrap" class="ft15">(підкреслити)</p>
+  <p style="position:absolute;top:1102px;left:818px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:1119px;left:508px;white-space:nowrap" class="ft115">Стать&#160;ч&#160;-1,&#160;ж&#160;-2&#160;&#160;&#160; &#160;&#160;маса&#160;(вага)&#160;____зріст______см.&#160;<br/>Окружність&#160;голівки&#160;___см.&#160;грудної&#160;клітки&#160;___см.&#160;<br/>&#160;</p>
+
+
+
+  <p style="position:absolute;top:17px;left:710px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:731px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:752px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:774px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:795px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:816px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:17px;left:588px;white-space:nowrap" class="ft15">Код&#160;форми&#160;за&#160;ЗКУД&#160;</p>
+  <p style="position:absolute;top:35px;left:691px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:707px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:729px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:750px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:771px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:793px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:35px;left:814px;white-space:nowrap" class="ft16">&#160;</p>
+  <p style="position:absolute;top:38px;left:707px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:729px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:750px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:771px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:793px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:814px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:38px;left:581px;white-space:nowrap" class="ft15">Код&#160;закладу&#160;за&#160;ЗКПО&#160;</p>
+  <p style="position:absolute;top:65px;left:86px;white-space:nowrap" class="ft10">Міністерство&#160;охорони&#160;здоров’я&#160;України&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160; &#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;МЕДИЧНА&#160;ДОКУМЕНТАЦІЯ</p>
+  <p style="position:absolute;top:83px;left:86px;white-space:nowrap" class="ft17"><b>&#160; &#160;___________________________</b>&#160;&#160;&#160;</p>
+  <p style="position:absolute;top:83px;left:410px;white-space:nowrap" class="ft18">&#160;</p>
+  <p style="position:absolute;top:83px;left:464px;white-space:nowrap" class="ft18">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;&#160;</p>
+  <p style="position:absolute;top:87px;left:608px;white-space:nowrap" class="ft14">ФОРМА&#160;№&#160;096/о</p>
+  <p style="position:absolute;top:83px;left:708px;white-space:nowrap" class="ft18">&#160;</p>
+  <p style="position:absolute;top:83px;left:734px;white-space:nowrap" class="ft18">&#160;</p>
+  <p style="position:absolute;top:83px;left:793px;white-space:nowrap" class="ft18">&#160; &#160; &#160; &#160; &#160;</p>
+  <p style="position:absolute;top:99px;left:86px;white-space:nowrap" class="ft18">&#160; &#160; &#160; &#160; &#160; &#160; &#160;</p>
+  <p style="position:absolute;top:105px;left:145px;white-space:nowrap" class="ft15">Найменування&#160;закладу</p>
+  <p style="position:absolute;top:103px;left:262px;white-space:nowrap" class="ft14">&#160;</p>
+  <p style="position:absolute;top:103px;left:302px;white-space:nowrap" class="ft14">&#160;</p>
+  <p style="position:absolute;top:103px;left:356px;white-space:nowrap" class="ft14">&#160;</p>
+  <p style="position:absolute;top:103px;left:410px;white-space:nowrap" class="ft14">&#160;</p>
+  <p style="position:absolute;top:103px;left:464px;white-space:nowrap" class="ft14">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Затверджена&#160;наказом&#160;МОЗ&#160;України&#160;</p>
+  <p style="position:absolute;top:103px;left:788px;white-space:nowrap" class="ft14">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+  <p style="position:absolute;top:119px;left:86px;white-space:nowrap" class="ft14">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;26.07.99&#160;р. &#160;№&#160;184&#160;</p>
+  <p style="position:absolute;top:637px;left:693px;white-space:nowrap" class="ft10">Код&#160;за&#160;МКХ&#160;–&#160;Х&#160;</p>
+  <p style="position:absolute;top:654px;left:745px;white-space:nowrap" class="ft19">&#160;</p>
+  <p style="position:absolute;top:659px;left:678px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:659px;left:708px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:659px;left:738px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:659px;left:768px;white-space:nowrap" class="ft10">&#160;</p>
+  <p style="position:absolute;top:659px;left:799px;white-space:nowrap" class="ft10">&#160;</p>
+</div>

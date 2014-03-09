@@ -1,0 +1,21 @@
+%h1 Listing admin_name_znebols
+
+%table
+  %tr
+    %th Code
+    %th Name
+    %th
+    %th
+    %th
+
+  - @admin_name_znebols.each do |admin_name_znebol|
+    %tr
+      %td= admin_name_znebol.code
+      %td= admin_name_znebol.name
+      %td= link_to 'Show', admin_name_znebol
+      %td= link_to 'Edit', edit_admin_name_znebol_path(admin_name_znebol)
+      %td= link_to 'Destroy', admin_name_znebol, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Name znebol', new_admin_name_znebol_path

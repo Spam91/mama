@@ -11,10 +11,58 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140203164846) do
+ActiveRecord::Schema.define(:version => 20140223110312) do
+
+  create_table "admin_doctors", :force => true do |t|
+    t.string   "fname"
+    t.string   "sname"
+    t.string   "surname"
+    t.string   "email"
+    t.integer  "role"
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "admin_mkh_groups", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "admin_mkhs", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.integer  "mkh_group_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "admin_name_operations", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "admin_name_znebols", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "admin_surgeons", :force => true do |t|
+    t.string   "name"
+    t.string   "code"
+    t.string   "zvanie"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "apgars", :force => true do |t|
-    t.datetime "afterbir"
+    t.integer  "afterbir"
     t.integer  "sercebitia"
     t.integer  "duhania"
     t.integer  "colorshkiru"
@@ -70,16 +118,6 @@ ActiveRecord::Schema.define(:version => 20140203164846) do
     t.integer  "doctor_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "doctors", :force => true do |t|
-    t.string   "fname"
-    t.string   "sname"
-    t.string   "surname"
-    t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
   end
 
   create_table "oglads", :force => true do |t|

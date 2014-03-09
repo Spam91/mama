@@ -14,21 +14,61 @@
 //= require jquery_ujs
 //= require_tree .
 //$(document).ready();
-lic = 2;
+
 function remove_fields(elem) {
     $(elem).prev("input[type=hidden]").val("1");
     $(elem).parents(".fields").remove();
 }
-
-function add_field(elem) {
+lic = 2;
+function add_field(elem, cc) {
     lic++;
-    $(".pid").append("" +
+    $(elem).parents(".pid").append("" +
     "<p class='fields'>" +
       "<input id='oglad_diagnozs_attributes_"+lic+"_tohosp' name='oglad[diagnozs_attributes]["+lic+"][tohosp]' size='30' type='text'>" +
       "<input id='oglad_diagnozs_attributes_"+lic+"__destroy' name='oglad[diagnozs_attributes]["+lic+"][_destroy]' type='hidden' value='false'>" +
-      "<a href='#' onclick='remove_fields(this); return false;'>remove</a>" +
-      "<a href='#' onclick='add_field(this); return false;'>add</a>" +
+      "<input id='oglad_diagnozs_attributes_"+lic+"_tofin' name='oglad[diagnozs_attributes]["+lic+"][tofin]' type='hidden' value='" + cc + "'> "+
+      "<a href='#' onclick='remove_fields(this); return false;'>Видалити</a>" +
+
     "</p>"
     )
 }
 
+function add_field2(elem, cc) {
+    lic++;
+    name = $(".sel option:selected").text();
+    val2 = $(".sel option:selected").val();
+    $(elem).next(".vibor").append(""+
+            "<p class='fields'>" + name +
+            "<input id='oglad_diagnozs_attributes_"+lic+"_tohosp' name='oglad[diagnozs_attributes]["+lic+"][tohosp]' type='hidden' value='"+ val2 +"'>" +
+            "<input id='oglad_diagnozs_attributes_"+lic+"__destroy' name='oglad[diagnozs_attributes]["+lic+"][_destroy]' type='hidden' value='false'>" +
+            "<input id='oglad_diagnozs_attributes_"+lic+"_tofin' name='oglad[diagnozs_attributes]["+lic+"][tofin]' type='hidden' value='" + cc + "'> "+
+            "<a href='#' onclick='remove_fields(this); return false;'> x</a>" +
+            "</p>"
+    )
+
+}
+
+lic2 = 0;
+function add_field_mkh(elem) {
+    lic2++;
+    $(elem).parents(".pid").append("" +
+            "<p class='fields'>" +
+            "<input id='admin_mkh_group_mkhs_attributes_"+lic2+"_code' name='admin_mkh_group[mkhs_attributes]["+lic2+"][code]' size='30' type='text'>" +
+            "<input id='admin_mkh_group_mkhs_attributes_"+lic2+"_name' name='admin_mkh_group[mkhs_attributes]["+lic2+"][name]' size='30' type='text'>" +
+            "<input id='admin_mkh_group_mkhs_attributes_"+lic2+"__destroy' name='admin_mkh_group[mkhs_attributes]["+lic2+"][_destroy]' type='hidden' value='false'>" +
+            "<a href='#' onclick='remove_fields(this); return false;'>Видалити</a>" +
+            "</p>"
+    )
+}
+
+
+$(document).ready(
+function () {
+    $(".vstavka").each(function ala(){
+        str = $(this).text().length;
+        $(this).css("margin-right", -str.toString()+"ex")
+    });
+
+    //$(".vstavka").css("margin-right",-str)
+
+});

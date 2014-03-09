@@ -1,4 +1,10 @@
 Mama::Application.routes.draw do
+
+  namespace :admin do
+    resources :mkh_groups
+  end
+
+
   resources :women do
     resources :bloods
     resources :woman_infos
@@ -6,6 +12,8 @@ Mama::Application.routes.draw do
     resources :operations
     resources :oglads
     resources :pologs
+    get "fp" => "women#firstpage"
+
 
     resources :children do
       resources :apgars
@@ -15,8 +23,15 @@ Mama::Application.routes.draw do
 
     
   end
-  
-  resources :doctors
+
+  namespace :admin do
+    resources :doctors
+    resources :surgeons
+    resources :name_operations
+    resources :name_znebols
+  end
+
+
 
   root to: 'sessions#new'
   get "log_out" => "sessions#destroy", :as => "log_out"
@@ -64,7 +79,7 @@ Mama::Application.routes.draw do
 
   # Sample resource route within a namespace:
   #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
+  #     # Directs /admin/products/* to admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end

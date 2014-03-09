@@ -1,7 +1,7 @@
 class CreateApgars < ActiveRecord::Migration
   def change
     create_table :apgars do |t|
-      t.datetime :afterbir		#Час після народження
+      t.integer  :afterbir		#Час після народження
       t.integer  :sercebitia	#Серцебиття
       t.integer  :duhania		#Дихання СС
       t.integer  :colorshkiru	#Колір шкіри СС

@@ -3,17 +3,91 @@
 body{
   width: 1000px;
   margin: auto;
+  input, select{
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid #666666;
+  }
+  input:focus, select:focus{
+    box-shadow: 0 0 8px rgba(82,168,236,0.6);
+    border: 2px solid #56b4ef;
+  }
+  input:focus{
+    color: red;
+  }
+  input[type=number]{
+    width: 215px;
+  }
+  input[type=date]{
+    width: 215px;
+  }
+  input[type=date]{
+    width: 215px;
+  }
+  input[type=radio]:checked{
+    outline: none;
+    color: red;
+  }
 }
+
 
 .center{
   margin-top: 10px;
   label{
-    width: 300px;
+    width: 350px;
     text-align: right;
   }
-  input:focus{
-
+}
+.icr{
+  color: red;
+}
+.group{
+  label{
+    width: auto;
   }
+  table{
+    width: 100%;
+    caption{
+      margin: 0;
+      label{
+        text-shadow: 0 0 5px #56b4ef;
+        color: #56b4ef;
+        font: italic 200% serif;
+      }
+    }
+    td{
+      vertical-align: bottom;
+      width: 50%;
+      label{
+
+      }
+      a{
+        float: right;
+      }
+      .vibor{
+        border: 2px solid #666666;
+        border-radius: 8px;
+        height: 115px;
+        overflow-y: scroll;
+        p{
+          margin: 0;
+          padding: 0 5px 0 5px;
+          border-bottom: 1px dashed #56b4ef;
+        }
+      }
+      .vibor:hover{
+        box-shadow: 0 0 8px rgba(82,168,236,0.6);
+        border: 2px solid #56b4ef;
+      }
+    }
+  }
+
+  .selectgroup{
+    select{
+      width: 100%;
+    }
+  }
+
 }
 
 .navbar-inverse{
@@ -56,12 +130,10 @@ body{
   }
   li.list-group-item{
     h4{
-      a{
-
-      }
+      margin: 0;
       .right{
         float: right;
-        font-size: 10pt;
+        font-size: 8pt;
       }
 
     }

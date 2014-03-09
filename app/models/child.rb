@@ -14,7 +14,7 @@ class Child < ActiveRecord::Base
             length: { maximum: 25 }
             
   belongs_to :woman
-  has_one :apgar
+  has_many :apgars
   has_one :param
   has_one :problem
 end

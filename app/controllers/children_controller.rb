@@ -1,5 +1,7 @@
 # encoding: utf-8
 class ChildrenController < ApplicationController
+  skip_before_filter :role_doc, except: [:delete, :destroy]
+  skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def show
   	@child = Child.find(params[:id])
@@ -9,6 +11,11 @@ class ChildrenController < ApplicationController
   def new
     @child = Child.new
     @woman = Woman.find(params[:woman_id])
+    if Child.last.blank?
+      @last_h_c_id = 0
+    else
+      @last_h_c_id = Child.order("history_id ASC").last.history_id
+    end
   end
 
   def create
@@ -18,7 +25,7 @@ class ChildrenController < ApplicationController
     @woman.children << @child
     if @child.save
       flash[:notice] = "Дані збережено"
-      redirect_to woman_child_path(@woman, @child)
+      redirect_to woman_child_path(@woman, @child.id)
     else
       flash.now[:error] = "Не правильно введені дані"
       render 'new'

@@ -12,8 +12,8 @@
 #  updated_at      :datetime         not null
 #
 
-class Doctor < ActiveRecord::Base
-  attr_accessible :email, :fname, :sname, :surname, :password, :password_confirmation
+class Admin::Doctor < ActiveRecord::Base
+  attr_accessible :email, :fname, :sname, :surname, :password, :password_confirmation, :role
   before_save{|doctor| doctor.email = email.downcase}
 
   has_secure_password

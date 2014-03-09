@@ -1,0 +1,23 @@
+%h1 Listing admin_surgeons
+
+%table
+  %tr
+    %th Name
+    %th Code
+    %th Zvanie
+    %th
+    %th
+    %th
+
+  - @admin_surgeons.each do |admin_surgeon|
+    %tr
+      %td= admin_surgeon.name
+      %td= admin_surgeon.code
+      %td= admin_surgeon.zvanie
+      %td= link_to 'Show', admin_surgeon
+      %td= link_to 'Edit', edit_admin_surgeon_path(admin_surgeon)
+      %td= link_to 'Destroy', admin_surgeon, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Surgeon', new_admin_surgeon_path

@@ -1,5 +1,7 @@
 # encoding: utf-8
 class ApgarsController < ApplicationController
+  skip_before_filter :role_doc, except: [:delete, :destroy]
+  skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @a = Apgar.new
@@ -10,10 +12,10 @@ class ApgarsController < ApplicationController
     #@woman = Woman.new(params[:woman])
     @a = Apgar.new(params[:a])
     @child = Child.find(params[:child_id])
-    @child.apgar = @a
+    @child.apgars << @a
     if @a.save
       flash[:notice] = "Дані збережено"
-      redirect_to woman_child_path(@child.woman_id, @a)
+      redirect_to woman_child_path(@child.woman_id, @child)
     else
       flash.now[:error] = "Не правильно введені дані"
       render 'new'

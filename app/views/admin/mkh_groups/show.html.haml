@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Code:
+  = @admin_mkh_group.code
+%p
+  %b Name:
+  = @admin_mkh_group.name
+
+= link_to 'Edit', edit_admin_mkh_group_path(@admin_mkh_group)
+\|
+= link_to 'Back', admin_mkh_groups_path

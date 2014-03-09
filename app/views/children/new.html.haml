@@ -2,14 +2,14 @@
 =form_for :child, :url => {:action => :create} do |b|
   .center
     =b.label "Номер історії новонародженого"
-    =b.number_field :history_id
+    =b.number_field :history_id, placeholder: "рекомендовано: " + @last_h_c_id.to_s
     %br
     =b.label "Дата народження"
-    =b.datetime_select :born, prompt: true
+    =b.date_field :born, prompt: true
     //=b.text_field :born, "data-behaviour" => "datepicker"
     %br
     =b.label "Фамілія"
-    =b.text_field :surname
+    =b.text_field :surname, value: @woman.surname
     %br
     =b.label "Імя"
     =b.text_field :fname

@@ -8,17 +8,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= render "layouts/header"%>
-<% if current_doctor%>
-<%= render "layouts/left_menu"%>
-<% end %>
-<div class="container">
-  <% flash.each do |key, value| %>
-      <div class="alert-<%= key %>"><%= value %></div>
-  <% end %>
 
-  <%= yield %>
-</div>
+<%if current_doctor %>
+    <% if current_doctor.role != 1%>
+        <%= render "layouts/header"%>
+        <%= render "layouts/left_menu"%>
+        <div class="container">
+          <% flash.each do |key, value| %>
+              <div class="alert-<%= key %>"><%= value %></div>
+          <% end %>
+
+          <%= yield %>
+        </div>
+    <% else %>
+        <%= render "layouts/header"%>
+        <%= render "layouts/left_menu_admin"%>
+        <div class="container">
+          <% flash.each do |key, value| %>
+              <div class="alert-<%= key %>"><%= value %></div>
+          <% end %>
+
+          <%= yield %>sdsvsd
+        </div>
+    <% end %>
+<% else %>
+
+    <%= yield %>
+<% end %>
 
 </body>
 </html>

@@ -1,5 +1,7 @@
 # encoding: utf-8
 class BloodsController < ApplicationController
+  skip_before_filter :role_doc, except: [:delete, :destroy]
+  skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @blood = Blood.new

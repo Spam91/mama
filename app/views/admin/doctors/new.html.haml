@@ -23,4 +23,8 @@
 	%br
 	=u.password_field :password_confirmation
 	%br
+	=u.label "1-Адмін  2-Доктор(повні права) 3-Доктор"
+	%br
+	=u.number_field :role
+	%br
 	=u.submit

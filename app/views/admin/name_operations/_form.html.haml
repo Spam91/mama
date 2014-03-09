@@ -1,0 +1,16 @@
+= form_for @admin_name_operation do |f|
+  - if @admin_name_operation.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@admin_name_operation.errors.count, "error")} prohibited this admin_name_operation from being saved:"
+      %ul
+        - @admin_name_operation.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :code
+    = f.text_field :code
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

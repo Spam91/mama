@@ -1,0 +1,22 @@
+= form_for @admin_mkh_group do |f|
+  - if @admin_mkh_group.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@admin_mkh_group.errors.count, "error")} prohibited this admin_mkh_group from being saved:"
+      %ul
+        - @admin_mkh_group.errors.full_messages.each do |msg|
+          %li= msg
+
+
+  = f.label :code
+  = f.text_field :code
+  = f.label :name
+  = f.text_field :name
+  .pid
+    = f.label "mkh _._ _._"
+    =link_to_function "Добавити", "add_field_mkh(this)"
+    = f.fields_for :mkhs do |m|
+      %p{class: "fields"}
+        =m.text_field :code
+        =m.text_field :name
+        =link_to_remove_field "Видалити", m
+  = f.submit 'Save'

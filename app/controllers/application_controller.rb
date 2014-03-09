@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::Base
   before_filter :autorize
+  before_filter :role_doc
+  before_filter :role_nach_doc
   protect_from_forgery
 
   protected
@@ -15,9 +17,21 @@ class ApplicationController < ActionController::Base
     @dh.save
   end
 
+  def role_doc
+    if current_doctor.role == 3
+      redirect_to women_path
+    end
+  end
+
+  def role_nach_doc
+    if current_doctor.role == 2
+      redirect_to women_path
+    end
+  end
+
   def autorize
-    unless Doctor.find(session[:doctor_id])
-      #flash[:notice] = "You are not regist"
+    unless session[:doctor_id]
+      flash[:notice] = "You are not regist"
       redirect_to log_in_path
     end
   end
@@ -25,7 +39,7 @@ class ApplicationController < ActionController::Base
   private
 
   def current_doctor
-    @current_doctor ||= Doctor.find(session[:doctor_id]) if session[:doctor_id]
+    @current_doctor ||= Admin::Doctor.find(session[:doctor_id]) if session[:doctor_id]
   end
 
   helper_method :current_doctor

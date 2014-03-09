@@ -1,11 +1,11 @@
 <div class="left-menu">
     <ul class="nav nav-pills nav-stacked">
       <li
-      <% if current_page?(doctor_path(current_doctor)) %>
+      <% if current_page?(admin_doctor_path(current_doctor)) %>
       class="active"
       <% end %>
       >
-      <a href="<%= doctor_path(current_doctor) %>">Головна</a></li>
+      <a href="<%= admin_doctor_path(current_doctor) %>">Головна</a></li>
 
       <li
       <% if current_page?(women_path) %>

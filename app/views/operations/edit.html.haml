@@ -2,18 +2,18 @@
 =form_for :o, :url => {action: :update}, method: :put do |t|
   .center
     =t.label "Найменування операції"
-    =t.text_field :oname
+    =t.select :oname, Admin::NameOperation.all.collect{|p| [p.name, p.id]}
     %br
     =t.label "Дата і час"
     =t.datetime_select :dateandtime
     %br
     =t.label "Метод знеболювання"
-    =t.text_field :methodzneb
+    =t.select :methodzneb, Admin::NameZnebol.all.collect{|z|[z.name]}
     %br
     =t.label "Ускладнення"
     =t.text_field :problem
     %br
     =t.label "Оперував СС"
-    =t.text_field :oper
+    =t.select :oper, Admin::Surgeon.all.collect{|s| [s.name]}
     %br
     =t.submit "Update"
