@@ -1,11 +1,11 @@
 class CreateOperations < ActiveRecord::Migration
   def change
     create_table :operations do |t|
-      t.integer   :oname				  #Найменування операції CC
+      t.integer  :name_operation_id				  #Найменування операції CC
       t.datetime :dateandtime		#Дата і час
-      t.string   :methodzneb		#Метод знеболювання
+      t.string   :name_znebol_id		#Метод знеболювання
       t.string   :problem			  #Ускладнення
-      t.integer   :oper          #Оперував СС
+      t.integer  :surgeon_id          #Оперував СС
       t.integer  :woman_id
       t.timestamps
     end

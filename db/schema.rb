@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140223110312) do
+ActiveRecord::Schema.define(:version => 20140310093235) do
 
   create_table "admin_doctors", :force => true do |t|
     t.string   "fname"
@@ -77,7 +77,7 @@ ActiveRecord::Schema.define(:version => 20140223110312) do
     t.integer  "number"
     t.boolean  "plusminus"
     t.integer  "gemo"
-    t.integer  "tutr"
+    t.float    "tutr"
     t.string   "alegreac"
     t.datetime "rw11"
     t.boolean  "rw12"
@@ -102,10 +102,16 @@ ActiveRecord::Schema.define(:version => 20140223110312) do
   end
 
   create_table "diagnozs", :force => true do |t|
-    t.string   "tohosp"
-    t.string   "tofin"
-    t.string   "toclinik"
-    t.integer  "oglad_id"
+    t.integer  "tipdia"
+    t.integer  "mkh_id"
+    t.integer  "woman_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "diamkhs", :force => true do |t|
+    t.integer  "diagnoz_id"
+    t.integer  "mkh_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -142,14 +148,14 @@ ActiveRecord::Schema.define(:version => 20140223110312) do
   end
 
   create_table "operations", :force => true do |t|
-    t.integer  "oname"
+    t.integer  "name_operation_id"
     t.datetime "dateandtime"
-    t.string   "methodzneb"
+    t.string   "name_znebol_id"
     t.string   "problem"
-    t.integer  "oper"
+    t.integer  "surgeon_id"
     t.integer  "woman_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "params", :force => true do |t|

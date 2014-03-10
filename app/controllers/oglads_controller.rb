@@ -5,15 +5,12 @@ class OgladsController < ApplicationController
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
     @oglad = Oglad.new
-    @oglad.diagnozs.build if @oglad.diagnozs.empty?
     @woman = Woman.find(params[:woman_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-
     @oglad = Oglad.new(params[:oglad])
-
     @woman = Woman.find(params[:woman_id])
     @woman.oglad = @oglad
     if @oglad.save

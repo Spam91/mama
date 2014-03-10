@@ -49,11 +49,11 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><%=icr c.oname%></td>
+                    <td><%=icr c.name_operation.name%></td>
                     <td><%=icr c.dateandtime%></td>
-                    <td><%=icr c.methodzneb%></td>
+                    <td><%=icr c.name_znebol.name%></td>
                     <td><%=icr c.problem%></td>
-                    <td><%=icr c.oper%></td>
+                    <td><%=icr c.surgeon.name%></td>
                     <td><%= link_to "edit", edit_woman_operation_path(@woman, c) %></td>
                     <td><%=link_to "show", woman_operation_path(@woman, c)%></td>
                   </tr>
@@ -61,7 +61,7 @@
 
 
               </div>
-            </h5>
+
             <!--<p>Фамілія: </p>
             <p>Імя: </p>
             <p>По-батькові: </p>-->
@@ -72,7 +72,7 @@
     </td>
     <tr/>
   <tr>
-    <td colspan="2">
+    <td>
       <div class="grid-item">
         <%unless @woman.polog%>
             <h4>Пологи <div class="right"><%=link_to "Ред.", new_woman_polog_path(@woman) %></div></h4>
@@ -88,8 +88,30 @@
         <%end%>
       </div>
     </td>
-
+    <td>
+      <div class="grid-item">
+        <h4>Діагнози <div class="right"><%=link_to "Ред.", new_woman_diagnoz_path(@woman) %></div></h4>
+            <div class="right">
+              <table>
+                <%- 1.upto(3) do |i| %>
+                    <tr><td colspan ="2" align="center"><%= tip_diagnoz i %></td></tr>
+                    <%-@woman.diagnozs.each do |c| %>
+                        <% if i == c.tipdia %>
+                            <tr>
+                              <%- c.diamkhs.each do |di| %>
+                                  <td><%=icr di.mkh.mkh_group.code + di.mkh.code%></td>
+                                  <td><%=icr di.mkh.name%></td>
+                              <% end %>
+                            </tr>
+                        <% end %>
+                    <% end %>
+                <% end %>
+              </table>
+            </div>
+      </div>
+    </td>
   </tr>
+
   <tr>
     <td colspan="2">
       <div class="grid-item">

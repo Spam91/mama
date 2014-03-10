@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
-  before_filter :autorize
-  before_filter :role_doc
-  before_filter :role_nach_doc
+  #Контроль авторизації і всіх прав
+  #before_filter :autorize
+  #before_filter :role_doc
+  #before_filter :role_nach_doc
   protect_from_forgery
 
   protected

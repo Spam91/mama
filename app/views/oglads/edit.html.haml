@@ -1,5 +1,5 @@
 =render "layouts/tab"
-=form_for @og, :url => {action: :update}, method: :put do |t|
+=form_for :og, :url => {action: :update}, method: :put do |t|
   .center
     =t.label "Зріст (см)"
     =t.number_field :zrist
@@ -28,35 +28,4 @@
     =t.label "Висота дна матки(мм)"
     =t.number_field :vusdnamatry
     %br
-    %br
-      .group
-        %table
-          %caption
-            %label
-              Діагнози (МКХ-10)
-          %tr
-            %td
-              =t.label "При госпіталізації"
-              =link_to_function "Добавити", "add_field2(this, 1)"
-              =t.fields_for :diagnozs do |d|
-                .vibor
-                  %p{class: "fields"}
-                    =d.label :tohosp
-                    =d.hidden_field :tohosp
-
-              =t.label "Клінічний"
-              =link_to_function "Добавити", "add_field2(this, 2)"
-              =t.fields_for :diagnozs do |d|
-                .vibor
-                  %p{class: "fields"}
-
-              =t.label "Заключний"
-              =link_to_function "Добавити", "add_field2(this, 3)"
-              =t.fields_for :diagnozs do |d|
-                .vibor
-                  %p{class: "fields"}
-            %td
-              =t.fields_for :diagnozs do |d|
-                .selectgroup
-                  =d.grouped_collection_select :toclinik, Admin::MkhGroup.all, :mkhs, :name, :id, :name, {:include_blank => false}, {class:"sel", size: "25", value: nil}
     =t.submit "Update"

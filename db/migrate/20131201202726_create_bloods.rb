@@ -4,7 +4,7 @@ class CreateBloods < ActiveRecord::Migration
       t.integer  :number	#Група крові
       t.boolean  :plusminus	#Резус - приналежність
       t.integer  :gemo		#Гемоглобін
-      t.integer  :tutr		#Титр антитіл
+      t.float    :tutr		#Титр антитіл
       t.string   :alegreac  #Алергічні реакції
       t.datetime :rw11		#
       t.boolean  :rw12		#

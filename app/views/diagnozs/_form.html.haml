@@ -1,0 +1,20 @@
+= form_for @diagnoz do |t|
+  - if @diagnoz.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@diagnoz.errors.count, "error")} prohibited this diagnoz from being saved:"
+      %ul
+        - @diagnoz.errors.full_messages.each do |msg|
+          %li= msg
+  .center
+    =t.label "Type diagnoz"
+    =t.select :tipdia, [["При госпіталізації", 1], ["Клінічний", 2], ["Заключний", 3]], {:include_blank => false}, {size: "5"}
+    %br
+    =grouped_collection_select  nil, nil, Admin::MkhGroup.all, :mkhs, :name, :id, :name, {:include_blank => false}, {class: "sel", size: "10"}
+    .pid
+      = t.label "diamkh"
+      =link_to_function "Добавити", "add_field_diamkh(this)"
+      = t.fields_for :diamkhs do |m|
+        %p{class: "fields"}
+          =m.text_field :mkh_id
+          =link_to_remove_field "Видалити", m
+    =t.submit "Create"

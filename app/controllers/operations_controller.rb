@@ -12,7 +12,13 @@ class OperationsController < ApplicationController
     #@woman = Woman.new(params[:woman])
     @o = Operation.new(params[:o])
     @woman = Woman.find(params[:woman_id])
+    @noper = Admin::NameOperation.find(params[:o][:name_operation_id])
+    @nzneb = Admin::NameZnebol.find(params[:o][:name_znebol_id])
+    @surg = Admin::Surgeon.find(params[:o][:surgeon_id])
     @woman.operations << @o
+    @noper.operations << @o
+    @nzneb.operations << @o
+    @surg.operations << @o
     if @o.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)

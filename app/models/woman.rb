@@ -33,6 +33,7 @@ class Woman < ActiveRecord::Base
   has_one :woman_info
   has_one :oglad
   has_one :polog
+  has_many :diagnozs
   has_many :children
   has_many :operations
 end
