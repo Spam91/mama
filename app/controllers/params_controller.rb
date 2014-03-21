@@ -4,16 +4,17 @@ class ParamsController < ApplicationController
   skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @par = Param.new
+    @woman = Woman.find(params[:woman_id])
+    @param = Param.new
     @child = Child.find(params[:child_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-    @par = Param.new(params[:par])
+    @param = Param.new(params[:param])
     @child = Child.find(params[:child_id])
-    @child.param = @par
-    if @par.save
+    @child.param = @param
+    if @param.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(params[:woman_id], params[:child_id])
     else
@@ -24,13 +25,14 @@ class ParamsController < ApplicationController
   end
 
   def edit
-    @par = Param.find(params[:id])
+    @woman = Woman.find(params[:woman_id])
+    @param = Param.find(params[:id])
     @child = Child.find(params[:child_id])
   end
 
   def update
-    @par = Param.find(params[:id])
-    if @par.update_attributes(params[:par])
+    @param = Param.find(params[:id])
+    if @par.update_attributes(params[:param])
       flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(params[:woman_id], params[:child_id])
     else

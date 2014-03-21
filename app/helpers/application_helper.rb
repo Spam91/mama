@@ -4,17 +4,24 @@ module ApplicationHelper
     d.hidden_field(:_destroy) + link_to_function(name, "remove_fields(this)")
   end
 
-  def fph(input)
-
-      ("<span class='vstavka'>" + input.to_s + "</span>").html_safe
-
+  def fph(in_object, *in_attr)
+    if in_object.blank?
+      ("<span class='vstavka'>###</span>").html_safe
+    else
+      ("<span class='vstavka'>" + in_attr.map{|at| in_object.send(at)}.join(" ") + "</span>").html_safe
+    end
   end
 
+
   def icr(name)
-    if name.blank?
+    if name.nil?
       return ("<span class='icr'>" + "###" + "</span>").html_safe
+    elsif name == true
+      return ("<span style='font: italic 100% serif'><b>" + "  ТАК  " + "</b></span>").html_safe
+    elsif name == false
+      return ("<span style='font: italic 100% serif'><b>" + "  НІ  " + "</b></span>").html_safe
     else
-      return name
+      return ("<span style='font: italic 100% serif'><b>" + name.to_s + "</b></span>").html_safe
     end
   end
 

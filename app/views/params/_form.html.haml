@@ -1,0 +1,47 @@
+=render "layouts/tab"
+=render "children/backchild"
+=form_for [@woman,@child,@param] do |t|
+  .center
+    =t.label :stat, "Стать"
+    =t.radio_button :stat, true
+    %span чоловіча
+    =t.radio_button :stat, false
+    %span жіноча
+    %br
+    =t.label "Народився"
+    =t.radio_button :life, true
+    %span живим
+    =t.radio_button :life, false
+    %span мертвим
+    %br
+    =t.label "Народився"
+    =t.radio_button :stan, true
+    %span доношене
+    =t.radio_button :stan, false
+    %span не доношене
+    %br
+    =t.label "Маса (грам)"
+    =t.number_field :weight
+    %br
+    =t.label "Зріст (cм)"
+    =t.number_field :height
+    %br
+    =t.label "Окружність голови (cм)"
+    =t.number_field :head
+    %br
+    =t.label "Окружність грудної клітки (cм)"
+    =t.number_field :body
+    %br
+    =t.label "Асфіксія тривалість"
+    =t.number_field :duration
+    %br
+    =t.label "Асфіксія заходи оживлення"
+    =t.text_field :zahodu
+    %br
+    =t.label "Спадковіть матері"
+    =t.text_field :spad_mot
+    %br
+    =t.label "Спадковість батька"
+    =t.text_field :spad_fat
+    %br
+    =t.submit "Save"

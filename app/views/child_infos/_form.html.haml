@@ -1,0 +1,16 @@
+=render "children/backchild"
+= form_for [@woman, @child, @child_info] do |t|
+  .center
+    =t.label :birth, "Народження"
+    =t.date_field :birth, prompt: true
+    =t.label :dead, "Поступив"
+    =t.date_field :dead, prompt: true
+    =t.label :input, "Виписаний"
+    =t.date_field :input, prompt: true
+    =t.label :output, "Помер"
+    =t.date_field :output, prompt: true
+    =t.label :move, "Переведений"
+    =t.date_field :birth, prompt: true
+    =t.label :where, "Куди"
+    =t.text_field :where
+    =t.submit "Save"

@@ -1,0 +1,11 @@
+=render "layouts/tab"
+=render "children/backchild"
+=form_for [@woman,@child,@problem] do |t|
+  .center
+    =t.label "Вади розвитку"
+    =t.text_field :vadrozv
+    %br
+    =t.label "Пологові травми"
+    =t.text_field :pologtravm
+    %br
+    =t.submit "Save"

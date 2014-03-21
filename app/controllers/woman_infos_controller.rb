@@ -4,16 +4,16 @@ class WomanInfosController < ApplicationController
   skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @wi = WomanInfo.new
+    @woman_info = WomanInfo.new
     @woman = Woman.find(params[:woman_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-    @wi = WomanInfo.new(params[:wi])
+    @woman_info = WomanInfo.new(params[:woman_info])
     @woman = Woman.find(params[:woman_id])
-    @woman.woman_info = @wi
-    if @wi.save
+    @woman.woman_info = @woman_info
+    if @woman_info.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
@@ -24,14 +24,14 @@ class WomanInfosController < ApplicationController
   end
 
   def edit
-    @wi = WomanInfo.find(params[:id])
+    @woman_info = WomanInfo.find(params[:id])
     @woman = Woman.find(params[:woman_id])
   end
 
   def update
-    @wi = WomanInfo.find(params[:id])
+    @woman_info = WomanInfo.find(params[:id])
     @woman = Woman.find(params[:woman_id])
-    if @wi.update_attributes(params[:wi])
+    if @woman_info.update_attributes(params[:woman_info])
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else

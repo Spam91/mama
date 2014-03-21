@@ -16,15 +16,17 @@
 #
 
 class WomanInfo < ActiveRecord::Base
-  attr_accessible :age, :input, :output, :bed, :directed, :home_adress, :tel, :invalidity
+  attr_accessible :age, :input, :output, :bed, :directed, :home_adress, :tel, :invalidity,
+                  :categor, :seria, :number_pos, :national, :palata, :misce_progiv, :sim_stan,
+                  :job, :vid_akysher, :raziv, :name_cons
 
-  validates :home_adress,
+  validates :directed, :home_adress, :tel,
+            :seria, :number_pos, :national, :palata, :misce_progiv, :sim_stan,
+            :job, :name_cons,
             length: {minimum: 1},
             length: {maximum: 250}
-  validates :directed,
-            length: {minimum: 1},
-            length: {maximum: 250}
+
+  validates :age, :bed, :categor, :raziv, length: {maximum:3}
 
   belongs_to :woman
-
 end

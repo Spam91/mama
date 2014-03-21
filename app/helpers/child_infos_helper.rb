@@ -1,0 +1,2 @@
+module ChildInfosHelper
+end

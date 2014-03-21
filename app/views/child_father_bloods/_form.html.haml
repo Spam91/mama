@@ -1,0 +1,22 @@
+=render "children/backchild"
+= form_for [@woman, @child, @child_father_blood] do |f|
+  .center
+    = f.label :number1, "Група крові ДИТИНИ"
+    = f.select :number1, [[1,1], [2,2], [3,3], [4,4]]
+    %br
+    = f.label :plusminus1, "Резус - приналежність"
+    =f.radio_button :plusminus1, true
+    %span +
+    =f.radio_button :plusminus1, false
+    %span -
+    %br
+    = f.label :number2, "Група крові БАТЬКА"
+    = f.select :number2, [[1,1], [2,2], [3,3], [4,4]]
+    %br
+    = f.label :plusminus2, "Резус - приналежність"
+    =f.radio_button :plusminus2, true
+    %span +
+    =f.radio_button :plusminus2, false
+    %span -
+    %br
+    = f.submit 'Save'

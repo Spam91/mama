@@ -24,14 +24,14 @@ class OgladsController < ApplicationController
   end
 
   def edit
-    @og = Oglad.find(params[:id])
+    @oglad = Oglad.find(params[:id])
     @woman = Woman.find(params[:woman_id])
   end
 
   def update
-    @og = Oglad.find(params[:id])
+    @oglad = Oglad.find(params[:id])
     @woman = Woman.find(params[:woman_id])
-    if @og.update_attributes(params[:og])
+    if @oglad.update_attributes(params[:oglad])
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else

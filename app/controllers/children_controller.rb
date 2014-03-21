@@ -16,6 +16,7 @@ class ChildrenController < ApplicationController
     else
       @last_h_c_id = Child.order("history_id ASC").last.history_id
     end
+    @last_h_c_id+=1
   end
 
   def create

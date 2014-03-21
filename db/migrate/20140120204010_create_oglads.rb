@@ -16,6 +16,12 @@ class CreateOglads < ActiveRecord::Migration
       t.integer  :tazvera			#
       t.integer  :okryg				#Окружність живота
       t.integer  :vusdnamatry		#Висота дна матки
+      t.string   :pologplod   #положення плоду
+      t.string   :sercebitia  #серцебиття
+      t.string   :legchas     #передлежача частина
+      t.string   :where       #де знаходиться
+      t.string   :pologdia    #пологова діяльність
+      t.string   :vagaplod    #передбачувана вага плоду
       t.integer  :woman_id
       t.timestamps
     end

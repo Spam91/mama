@@ -1,4 +1,5 @@
-<%= link_to "Перша сторінка", woman_fp_path(@woman) %>
+<button type="button" class="btn btn-default" ><%= link_to "Back", women_path %></button>
+<button type="button" class="btn btn-info" style="float: right"><%= link_to "Перша сторінка", woman_fp_path(@woman) %></button>
 <table class="grid-table">
   <caption>
     <h4 class="center"><%= @woman.fname%> <%= @woman.sname%> <%= @woman.surname+" "%>ІП №<%= @woman.history_id%></h4>
@@ -10,7 +11,7 @@
             <h4>Загальна інформація <div class="right"><%=link_to "Ред.", new_woman_woman_info_path(@woman) %></div></h4>
         <%else%>
             <h4>Загальна інформація <div class="right"> <%=link_to "Ред.", edit_woman_woman_info_path(@woman, @woman.woman_info.id) %></div></h4>
-            <p>Вік: <%=@woman.woman_info.age%></p>
+            <p>Вік: <%=icr(@woman.woman_info.age)%></p>
             <p>Поступила: <%=icr(@woman.woman_info.input)%></p>
             <p>Виписана: <%=icr(@woman.woman_info.output)%></p>
             <p>Ліжко днів: <%=icr(@woman.woman_info.bed)%></p>
@@ -18,6 +19,17 @@
             <p>Місце проживання: <%=icr(@woman.woman_info.home_adress)%></p>
             <p>Телефон мобільний: <%=icr(@woman.woman_info.tel)%></p>
             <p>Інвалід: <%=icr @woman.woman_info.invalidity%></p>
+            <p>Категорія інвалід: <%=icr @woman.woman_info.categor%></p>
+            <p>Cерія посвідчення: <%=icr @woman.woman_info.seria%></p>
+            <p>Номер посвідчення: <%=icr @woman.woman_info.number_pos%></p>
+            <p>Національність: <%=icr @woman.woman_info.national%></p>
+            <p>Палата: <%=icr @woman.woman_info.palata%></p>
+            <p>Адреса: <%=icr @woman.woman_info.misce_progiv%></p>
+            <p>Сімейний стан: <%=icr @woman.woman_info.sim_stan%></p>
+            <p>Робота: <%=icr @woman.woman_info.job%></p>
+            <p>Відвідування акушерку: <%=icr @woman.woman_info.vid_akysher%></p>
+            <p>Разів: <%=icr @woman.woman_info.raziv%></p>
+            <p>Найменування консультацій: <%=icr @woman.woman_info.name_cons%></p>
         <%end%>
       </div>
     </td>
@@ -28,6 +40,13 @@
         <%else%>
             <h4>Кров<div class="right"><%=link_to "Ред.", edit_woman_blood_path(@woman, @woman.blood.id)%></div></h4>
             <p>Група крові: <%=icr @woman.blood.number%></p>
+            <p>Гемоглобін: <%=icr @woman.blood.gemo%></p>
+            <p>Резус - приналежність: <%=icr @woman.blood.plusminus%></p>
+            <p>Титр антитіл: <%=icr @woman.blood.tutr%></p>
+            <p>Алергічні реакції: <%=icr @woman.blood.alegreac%></p>
+            <p>RW1: <%=icr @woman.blood.rw12%> <%=icr @woman.blood.rw11%> </p>
+            <p>RW2і: <%=icr @woman.blood.rw22%> <%=icr @woman.blood.rw21%> </p>
+            <p>Гонорею: <%=icr @woman.blood.gonorea2%> <%=icr @woman.blood.gonorea1%> </p>
         <%end%>
       </div>
     </td>
@@ -36,41 +55,40 @@
     <td colspan="2">
       <div class="grid-item">
         <h4>Операції <div class="right"><%=link_to "Доб.", new_woman_operation_path(@woman) %></div></h4>
-        <%-@woman.operations.each do |c| %>
-              <div class="right">
-                <table>
-                  <tr>
-                    <td>Назва операції</td>
-                    <td>Дата і час</td>
-                    <td>Знеболювання</td>
-                    <td>Ускладнення</td>
-                    <td>Оперував</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><%=icr c.name_operation.name%></td>
-                    <td><%=icr c.dateandtime%></td>
-                    <td><%=icr c.name_znebol.name%></td>
-                    <td><%=icr c.problem%></td>
-                    <td><%=icr c.surgeon.name%></td>
-                    <td><%= link_to "edit", edit_woman_operation_path(@woman, c) %></td>
-                    <td><%=link_to "show", woman_operation_path(@woman, c)%></td>
-                  </tr>
-                </table>
+        <div class="right">
+          <table class="list_has_many">
+            <tr>
+              <td>Назва операції</td>
+              <td>Дата і час</td>
+              <td>Знеболювання</td>
+              <td>Ускладнення</td>
+              <td>Оперував</td>
+              <td></td>
+              <td></td>
+            </tr>
+                <%-@woman.operations.each do |c| %>
+                          <tr>
+                            <td><%=icr c.name_operation.name%></td>
+                            <td><%=icr c.dateandtime%></td>
+                            <td><%=icr c.name_znebol.name%></td>
+                            <td><%=icr c.problem%></td>
+                            <td><%=icr c.surgeon.name%></td>
+                            <td><%= link_to "edit", edit_woman_operation_path(@woman, c) %></td>
+                            <td><%=link_to "show", woman_operation_path(@woman, c)%></td>
+                          </tr>
 
-
-              </div>
 
             <!--<p>Фамілія: </p>
             <p>Імя: </p>
             <p>По-батькові: </p>-->
 
 
-        <%end%>
+                <%end%>
+          </table>
+        </div>
       </div>
     </td>
-    <tr/>
+  <tr/>
   <tr>
     <td>
       <div class="grid-item">
@@ -93,17 +111,18 @@
         <h4>Діагнози <div class="right"><%=link_to "Ред.", new_woman_diagnoz_path(@woman) %></div></h4>
             <div class="right">
               <table>
-                <%- 1.upto(3) do |i| %>
-                    <tr><td colspan ="2" align="center"><%= tip_diagnoz i %></td></tr>
-                    <%-@woman.diagnozs.each do |c| %>
-                        <% if i == c.tipdia %>
-                            <tr>
-                              <%- c.diamkhs.each do |di| %>
-                                  <td><%=icr di.mkh.mkh_group.code + di.mkh.code%></td>
-                                  <td><%=icr di.mkh.name%></td>
-                              <% end %>
-                            </tr>
-                        <% end %>
+                <%- @woman.diagnozs.each do |i| %>
+                    <tr>
+                      <td colspan ="2" align="center">
+                        <%= tip_diagnoz i.tipdia %>
+                        <%= link_to "Edit", edit_woman_diagnoz_path(@woman, i) %>
+                      </td>
+                    </tr>
+                    <%- i.diamkhs.each do |di| %>
+                        <tr>
+                          <td><%=icr di.mkh.mkh_group.code + di.mkh.code%></td>
+                          <td><%=icr di.mkh.name%></td>
+                        </tr>
                     <% end %>
                 <% end %>
               </table>
@@ -113,7 +132,7 @@
   </tr>
 
   <tr>
-    <td colspan="2">
+    <td >
       <div class="grid-item">
         <%unless @woman.oglad%>
             <h4>Огляд <div class="right"><%=link_to "Ред.", new_woman_oglad_path(@woman) %></div></h4>
@@ -126,8 +145,20 @@
             <p>Номер пологів: <%=icr @woman.oglad.pology %></p>
             <p>Остання менструація: <%=icr @woman.oglad.menstryacia %></p>
             <p>Перше ворушіння плоду: <%=icr @woman.oglad.vorshiniaplody %></p>
+            <p>D Sp.: <%=icr @woman.oglad.tazsp %>кг</p>
+            <p>D Cr.: <%=icr @woman.oglad.tazcr %>кг</p>
+            <p>D Tr.: <%=icr @woman.oglad.taztr %>кг</p>
+            <p>C ext: <%=icr @woman.oglad.tazext %>кг</p>
+            <p>C diag: <%=icr @woman.oglad.tazdiag %>кг</p>
+            <p>T vera: <%=icr @woman.oglad.tazvera %>кг</p>
             <p>Окружність живота: <%=icr @woman.oglad.okryg %> см</p>
             <p>Висота дна матки: <%=icr @woman.oglad.vusdnamatry %> мм</p>
+            <p>Положення плоду: <%=icr @woman.oglad.pologplod %>кг</p>
+            <p>Серцебиття: <%=icr @woman.oglad.sercebitia %>кг</p>
+            <p>Передлежача частина: <%=icr @woman.oglad.legchas %>кг</p>
+            <p>Де знаходиться: <%=icr @woman.oglad.where %>кг</p>
+            <p>Пологова діяльність: <%=icr @woman.oglad.pologdia %>кг</p>
+            <p>Передбачувана вага плоду: <%=icr @woman.oglad.vagaplod %>кг</p>
         <%end%>
       </div>
     </td>

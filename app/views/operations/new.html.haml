@@ -1,19 +1,2 @@
 =render "layouts/tab"
-=form_for :o, :url => {:action => :create} do |t|
-  .center
-    =t.label "Найменування операції"
-    =t.select :name_operation_id, Admin::NameOperation.all.collect{|p| [p.code + " - " + p.name, p.id]}
-    %br
-    =t.label "Дата і час"
-    =t.datetime_select :dateandtime
-    %br
-    =t.label "Метод знеболювання"
-    =t.select :name_znebol_id, Admin::NameZnebol.all.collect{|z|[z.code + " - " + z.name, z.id]}
-    %br
-    =t.label "Ускладнення"
-    =t.text_field :problem
-    %br
-    =t.label "Оперував СС"
-    =t.select :surgeon_id, Admin::Surgeon.all.collect{|s| [s.code + " - " +s.name, s.id]}
-    %br
-    =t.submit "Create"
+=render partial: "form"

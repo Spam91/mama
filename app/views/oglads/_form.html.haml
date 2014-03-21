@@ -1,0 +1,67 @@
+=render "women/backwoman"
+=form_for [@woman, @oglad] do |t|
+  .center
+    =t.label "Зріст (см)"
+    =t.number_field :zrist
+    %br
+    =t.label "Вага (кг)"
+    =t.number_field :vaga
+    %br
+    =t.label "Температура"
+    =t.text_field :temperature
+    %br
+    =t.label "Номер вагітності"
+    =t.number_field :vagitnist
+    %br
+    =t.label "Номер пологів"
+    =t.number_field :pology
+    %br
+    =t.label "Остання менструація"
+    =t.date_field :menstryacia
+    %br
+    =t.label "Перше ворушіння плоду"
+    =t.date_field :vorshiniaplody
+    %br
+    =t.label "D Sp."
+    =t.number_field :tazsp
+    %br
+    =t.label "D Cr."
+    =t.number_field :tazcr
+    %br
+    =t.label "D Tr."
+    =t.number_field :taztr
+    %br
+    =t.label "C ext"
+    =t.number_field :tazext
+    %br
+    =t.label "C diag"
+    =t.number_field :tazdiag
+    %br
+    =t.label "T vera"
+    =t.number_field :tazvera
+    %br
+    =t.label "Окружність живота(см)"
+    =t.number_field :okryg
+    %br
+    =t.label "Висота дна матки(мм)"
+    =t.number_field :vusdnamatry
+    %br
+    =t.label "Положення плоду"
+    =t.text_field :pologplod
+    %br
+    =t.label "Серцебиття"
+    =t.text_field :sercebitia
+    %br
+    =t.label "Передлежача частина"
+    =t.text_field :legchas
+    %br
+    =t.label "Де знаходиться"
+    =t.text_field :where
+    %br
+    =t.label "Пологова діяльність"
+    =t.text_field :pologdia
+    %br
+    =t.label "Передбачувана вага плоду"
+    =t.text_field :vagaplod
+    %br
+    =t.submit "Save"

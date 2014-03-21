@@ -3,10 +3,6 @@
     =b.label "Номер історії новонародженого"
     =b.number_field :history_id
     %br
-    =b.label "Дата народження"
-    =b.date_field :born, prompt: true
-    //=b.text_field :born, "data-behaviour" => "datepicker"
-    %br
     =b.label "Фамілія"
     =b.text_field :surname, value: @woman.surname
     %br

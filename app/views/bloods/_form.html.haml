@@ -1,0 +1,50 @@
+=render "layouts/tab"
+= render "women/backwoman"
+=form_for [@woman, @blood] do |b|
+  .center
+    =b.label "Група крові"
+    =b.select :number, [[1,1], [2,2], [3,3], [4,4]]
+    %br
+    =b.label "Гемоглобін"
+    =b.text_field :gemo
+    %br
+    =b.label "Резус - приналежність"
+    =b.radio_button :plusminus, true
+    %span +
+    =b.radio_button :plusminus, false
+    %span -
+    %br
+    =b.label "Титр антитіл"
+    =b.select :tutr, [["1:2",2],["1:4",4],["1:8",8],["1:16",16],["1:32",32],["1:64",64],["1:128",128],["1:256",256],["1:512",512],["1:1024",1024]]
+    %br
+    =b.label "Алергічні реакції"
+    =b.text_field :alegreac
+    %br
+    =b.label "RW 1"
+    =b.date_field :rw11, prompt: true
+    %br
+    =b.label " "
+    =b.radio_button :rw12, true
+    %span +
+    =b.radio_button :rw12, false
+    %span -
+    %br
+    =b.label "RW 2"
+    =b.date_field :rw21, prompt: true
+    %br
+    =b.label " "
+    =b.radio_button :rw22, true
+    %span +
+    =b.radio_button :rw22, false
+    %span -
+    %br
+    =b.label "Результат дослідження на гонорею"
+    =b.date_field :gonorea1, prompt: true
+    %br
+    =b.label " "
+    =b.radio_button :gonorea2, true
+    %span +
+    =b.radio_button :gonorea2, false
+    %span -
+    %br
+    =b.submit "Save"

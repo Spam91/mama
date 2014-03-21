@@ -60,19 +60,7 @@ function add_field_mkh(elem) {
             "</p>"
     )
 }
-lic3 = 0;
-function add_field_diamkh(elem) {
-    lic3++;
-    name = $(".sel option:selected").text();
-    val2 = $(".sel option:selected").val();
-    $(elem).parents(".pid").append("" +
-            "<p class='fields'>" +
-            "<input id='diagnoz_diamkhs_attributes_"+lic3+"_mkh_id' name='diagnoz[diamkhs_attributes]["+lic3+"][mkh_id]' size='30' type='text' value='"+val2+"'>" +
-            "<input id='diagnoz_diamkhs_attributes_"+lic3+"__destroy' name='diagnoz[diamkhs_attributes]["+lic3+"][_destroy]' type='hidden' value='false'>" +
-            "<a href='#' onclick='remove_fields(this); return false;'>Видалити</a>" +
-            "</p>"
-    )
-}
+
 
 
 $(document).ready(

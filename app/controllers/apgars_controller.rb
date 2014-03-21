@@ -4,16 +4,17 @@ class ApgarsController < ApplicationController
   skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @a = Apgar.new
+    @woman = Woman.find(params[:woman_id])
+    @apgar = Apgar.new
     @child = Child.find(params[:child_id])
   end
 
   def create
-    #@woman = Woman.new(params[:woman])
-    @a = Apgar.new(params[:a])
+
+    @apgar = Apgar.new(params[:apgar])
     @child = Child.find(params[:child_id])
-    @child.apgars << @a
-    if @a.save
+    @child.apgars << @apgar
+    if @apgar.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@child.woman_id, @child)
     else
@@ -24,14 +25,15 @@ class ApgarsController < ApplicationController
   end
 
   def edit
-    @a = Apgar.find(params[:id])
+    @woman = Woman.find(params[:woman_id])
+    @apgar = Apgar.find(params[:id])
     @child = Child.find(params[:child_id])
   end
 
   def update
-    @a = Apgar.find(params[:id])
+    @apgar = Apgar.find(params[:id])
     @child = Child.find(params[:child_id])
-    if @a.update_attributes(params[:a])
+    if @apgar.update_attributes(params[:apgar])
       flash[:notice] = "Дані збережено"
       redirect_to woman_child_path(@child.woman_id, @a)
     else

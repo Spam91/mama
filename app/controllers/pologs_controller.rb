@@ -4,16 +4,16 @@ class PologsController < ApplicationController
   skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @po = Polog.new
+    @polog = Polog.new
     @woman = Woman.find(params[:woman_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-    @po = Polog.new(params[:po])
+    @polog = Polog.new(params[:polog])
     @woman = Woman.find(params[:woman_id])
-    @woman.polog = @po
-    if @po.save
+    @woman.polog = @polog
+    if @polog.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
@@ -24,14 +24,14 @@ class PologsController < ApplicationController
   end
 
   def edit
-    @po = Polog.find(params[:id])
+    @polog = Polog.find(params[:id])
     @woman = Woman.find(params[:woman_id])
   end
 
   def update
-    @po = Polog.find(params[:id])
+    @polog = Polog.find(params[:id])
     @woman = Woman.find(params[:woman_id])
-    if @po.update_attributes(params[:po])
+    if @polog.update_attributes(params[:polog])
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else

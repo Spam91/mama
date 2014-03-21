@@ -2,7 +2,6 @@ class CreateChildren < ActiveRecord::Migration
   def change
     create_table :children do |t|
       t.integer  :history_id
-      t.datetime :born
       t.string   :fname       #Імя
       t.string   :sname       #По-батькові
       t.string   :surname     #Фамілія

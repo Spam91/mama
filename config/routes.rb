@@ -1,14 +1,13 @@
 Mama::Application.routes.draw do
 
-  namespace :admin do
-    resources :mkh_groups
-  end
+
+
 
 
   resources :women do
+    resources :diagnozs
     resources :bloods
     resources :woman_infos
-    resources :diagnozs
     resources :operations
     resources :oglads
     resources :pologs
@@ -19,12 +18,15 @@ Mama::Application.routes.draw do
       resources :apgars
       resources :problems
       resources :params
+      resources :child_father_bloods
+      resources :child_infos
     end
 
     
   end
 
   namespace :admin do
+    resources :mkh_groups
     resources :doctors
     resources :surgeons
     resources :name_operations
@@ -33,7 +35,7 @@ Mama::Application.routes.draw do
 
 
 
-  root to: 'sessions#new'
+  root to: 'admin/doctors#index'
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
   resources :sessions, only: [:new, :create, :destroy]

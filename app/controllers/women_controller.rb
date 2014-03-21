@@ -24,6 +24,7 @@ class WomenController < ApplicationController
     else
       @last_h_id = Woman.order("history_id ASC").last.history_id
     end
+    @last_h_id+=1
   end
 
   def create

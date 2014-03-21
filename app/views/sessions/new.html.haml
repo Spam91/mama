@@ -1,10 +1,12 @@
 =form_tag sessions_path do
-	=label_tag :fname
-	%br
-	=text_field_tag :fname, params[:fname]
-	%br
-	=label_tag :password
-	%br
-	=password_field_tag :password
-	%br
-	=submit_tag "Log in"
+  .row
+    .span4.offset4.well
+      %legend
+        Будь-ласка введіть логін і пароль
+      =label_tag "Логін"
+      =text_field_tag :fname, params[:fname]
+      %br
+      =label_tag "Пароль"
+      =password_field_tag :password
+      %br
+      =submit_tag "Log in", {class: "btn btn-info btn-block"}

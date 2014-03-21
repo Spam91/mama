@@ -1,33 +1,112 @@
-<div>
-	<h4>Параметри дитини</h4>
-	<%unless @child.param%> 
-		<%=link_to "add", new_woman_child_param_path(@woman, @child) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_child_param_path(@woman, @child, @child.param)%>
-		<p>Стать: <%=@child.param.stat %></p>
-		<p>Народився: <%=@child.param.life %></p>
-		<p>Народився: <%=@child.param.stan %></p>
-		<p>Маса: <%=@child.param.weight %> гр.</p>
-		<p>Зріст: <%=@child.param.height %> мм.</p>
-		<p>Окружність голови: <%=@child.param.head %> мм.</p>
-		<p>Окружність грудної клітки: <%=@child.param.body %> мм.</p>
-		<p>Асфіксія тривалість: <%=@child.param.duration %></p>
-		<p>Асфіксія заходи оживлення: <%=@child.param.zahodu %></p>
-	<%end%>
-</div>
+<%= render "women/backwoman" %>
+<table class="grid-table">
+  <caption>
+    <h4 class="center"></h4>
+  </caption>
+  <tr>
+    <td>
+      <div class="grid-item">
+        <%unless @child.child_info %>
+            <h4>Загальна інформація дитини <div class="right"><%=link_to "Ред.", new_woman_child_child_info_path(@woman, @child) %></div></h4>
+        <%else%>
+            <h4>Загальна інформація дитини <div class="right"> <%=link_to "Ред.", edit_woman_child_child_info_path(@woman, @child, @child.child_info) %></div></h4>
+            <p>Народився: <%=icr (@child.child_info.birth) %></p>
+            <p>Поступив: <%= icr(@child.child_info.input) %></p>
+            <p>Виписаний: <%=icr(@child.child_info.output) %></p>
+            <p>Помер: <%=icr(@child.child_info.dead) %> гр.</p>
+            <p>Переведений: <%=icr(@child.child_info.move) %> мм.</p>
+            <p>Куди: <%=icr(@child.child_info.where) %> мм.</p>
+        <%end%>
+      </div>
+    </td>
+    <td>
+      <div class="grid-item">
+        <%unless @child.child_father_blood %>
+            <h4>Кров батька і дитини <div class="right"><%=link_to "Ред.", new_woman_child_child_father_blood_path(@woman, @child) %></div></h4>
+        <%else%>
+            <h4>Загальна інформація дитини <div class="right"> <%=link_to "Ред.", edit_woman_child_child_father_blood_path(@woman, @child, @child.child_father_blood) %></div></h4>
+            <p>Народився: <%=icr (@child.child_father_blood.number1) %></p>
+            <p>Поступив: <%= icr(@child.child_father_blood.plusminus1) %></p>
+            <p>Виписаний: <%=icr(@child.child_father_blood.number2) %></p>
+            <p>Помер: <%=icr(@child.child_father_blood.plusminus2) %> гр.</p>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="grid-item">
+        <%unless @child.param %>
+            <h4>Параметри дитини <div class="right"><%=link_to "Ред.", new_woman_child_param_path(@woman, @child) %></div></h4>
+        <%else%>
+            <h4>Параметри дитини <div class="right"> <%=link_to "Ред.", edit_woman_child_param_path(@woman, @child, @child.param) %></div></h4>
+            <p>Стать: <%=icr (@child.param.stat) %></p>
+            <p>Народився: <%= icr(@child.param.life) %></p>
+            <p>Народився: <%=icr(@child.param.stan) %></p>
+            <p>Маса: <%=icr(@child.param.weight) %> гр.</p>
+            <p>Зріст: <%=icr(@child.param.height) %> мм.</p>
+            <p>Окружність голови: <%=icr(@child.param.head) %> мм.</p>
+            <p>Окружність грудної клітки: <%=icr(@child.param.body) %> мм.</p>
+            <p>Асфіксія тривалість: <%=icr(@child.param.duration) %></p>
+            <p>Асфіксія заходи оживлення: <%=icr(@child.param.zahodu) %></p>
+            <p>Спадковість матері: <%=icr(@child.param.spad_mot) %></p>
+            <p>Спадковість батька: <%=icr(@child.param.spad_fat) %></p>
+        <%end%>
+      </div>
+    </td>
+    <td>
+      <div class="grid-item">
+        <%unless @child.problem %>
+            <h4>Проблеми дитини<div class="right"><%=link_to "Ред.", new_woman_child_problem_path(@woman, @child)%></div></h4>
+        <%else%>
+            <h4>Проблеми дитини<div class="right"><%=link_to "Ред.", edit_woman_child_problem_path(@woman, @child, @child.problem.id)%></div></h4>
+            <p>Вади розвитку: <%=icr(@child.problem.vadrozv) %></p>
+            <p>Пологові травми: <%=icr(@child.problem.pologtravm) %></p>
+        <%end%>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <div class="grid-item">
+        <h4>Оцінка Апгар <div class="right"><%=link_to "Доб.", new_woman_child_apgar_path(@woman, @child) %></div></h4>
+        <div class="right">
+          <table class="list_has_many">
+            <tr>
+              <td>Час після народження</td>
+              <td>Серцебиття</td>
+              <td>Дихання СС</td>
+              <td>Колір шкіри СС</td>
+              <td>Тонус мязів СС</td>
+              <td>Рефлекси</td>
+              <td>Оцінка</td>
+              <td></td>
+            </tr>
+                <%-@child.apgars.each do |c| %>
+                        <tr>
+                          <td><%=icr c.afterbir%></td>
+                          <td><%=icr c.sercebitia%></td>
+                          <td><%=icr c.duhania%></td>
+                          <td><%=icr c.colorshkiru%></td>
+                          <td><%=icr c.tonysmiaziv%></td>
+                          <td><%=icr c.reflexy%></td>
+                          <td><%=icr c.afterbir+c.sercebitia+c.duhania+c.colorshkiru+c.tonysmiaziv+c.reflexy%></td>
+                          <td><%= link_to "edit", edit_woman_child_apgar_path(@woman, @child, c) %></td>
+                        </tr>
 
-<div>
-	<h4>Проблеми дитини</h4>
-	<%unless @child.problem%> 
-		<%=link_to "add", new_woman_child_problem_path(@woman, @child) %>
-	<%else%>
-		<%=link_to "edit", edit_woman_child_problem_path(@woman, @child, @child.problem.id)%>
-		<p>Час смерті: <%=@child.problem.dead %></p>
-		<p>Вади розвитку: <%=@child.problem.vadrozv %></p>
-		<p>Пологові травми: <%=@child.problem.pologtravm %></p>
-	<%end%>
-</div>
+
+                    <!--<p>Фамілія: </p>
+                    <p>Імя: </p>
+                    <p>По-батькові: </p>-->
 
 
-<%=link_to "add", new_woman_child_apgar_path(@woman, @child) %>
+                <%end%>
+          </table>
+
+
+        </div>
+      </div>
+    </td>
+  <tr/>
+</table>
 

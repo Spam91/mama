@@ -12,6 +12,13 @@
 class Blood < ActiveRecord::Base
   attr_accessible :number, :plusminus, :gemo, :tutr, :alegreac, :rw11, :rw12, :rw21, :rw22, :gonorea1, :gonorea2
 
+  validates :alegreac,
+            length: {maximum: 250}
+  validates :number,
+            length: {maximum:1}
+  validates :gemo,
+            length: {maximum:4}
+
   belongs_to :woman
 
 end

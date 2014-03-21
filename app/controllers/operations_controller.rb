@@ -4,22 +4,22 @@ class OperationsController < ApplicationController
   skip_before_filter :role_nach_doc
   after_filter :wr_to_hist_doct, only: [:create, :update, :delete]
   def new
-    @o = Operation.new
+    @operation = Operation.new
     @woman = Woman.find(params[:woman_id])
   end
 
   def create
     #@woman = Woman.new(params[:woman])
-    @o = Operation.new(params[:o])
+    @operation = Operation.new(params[:operation])
     @woman = Woman.find(params[:woman_id])
-    @noper = Admin::NameOperation.find(params[:o][:name_operation_id])
-    @nzneb = Admin::NameZnebol.find(params[:o][:name_znebol_id])
-    @surg = Admin::Surgeon.find(params[:o][:surgeon_id])
-    @woman.operations << @o
-    @noper.operations << @o
-    @nzneb.operations << @o
-    @surg.operations << @o
-    if @o.save
+    @noper = Admin::NameOperation.find(params[:operation][:name_operation_id])
+    @nzneb = Admin::NameZnebol.find(params[:operation][:name_znebol_id])
+    @surg = Admin::Surgeon.find(params[:operation][:surgeon_id])
+    @woman.operations << @operation
+    @noper.operations << @operation
+    @nzneb.operations << @operation
+    @surg.operations << @operation
+    if @operation.save
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else
@@ -30,14 +30,14 @@ class OperationsController < ApplicationController
   end
 
   def edit
-    @o = Operation.find(params[:id])
+    @operation = Operation.find(params[:id])
     @woman = Woman.find(params[:woman_id])
   end
 
   def update
-    @o = Operation.find(params[:id])
+    @operation = Operation.find(params[:id])
     @woman = Woman.find(params[:woman_id])
-    if @o.update_attributes(params[:o])
+    if @operation.update_attributes(params[:operation])
       flash[:notice] = "Дані збережено"
       redirect_to woman_path(@woman)
     else

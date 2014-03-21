@@ -3,6 +3,7 @@
 body{
   width: 1000px;
   margin: auto;
+  //----------INPUTS EVENT
   input, select{
     outline: none;
     border-radius: 8px;
@@ -29,18 +30,43 @@ body{
     color: red;
   }
 }
-
-
+.sign_in{
+  margin-left: 30%;
+  .span4.offset4.well{
+    label{
+      width: 100px;
+    }
+    width: 400px;
+  }
+}
+//------форма всередині головного поля
 .center{
   margin-top: 10px;
   label{
     width: 350px;
     text-align: right;
   }
+  table{
+    width: 100%;
+  }
+  .sel{
+    width: 350px;
+  }
+  .selcen{
+    text-align: center;
+  }
+  .field_with_errors{
+    display: inline;
+    input{
+      border-color: red;
+    }
+  }
 }
+
 .icr{
   color: red;
 }
+
 .group{
   label{
     width: auto;
@@ -87,16 +113,13 @@ body{
       width: 100%;
     }
   }
-
 }
-
+//------navbar
 .navbar-inverse{
   margin-bottom: 0;
 }
 //---header
-.header{
 
-}
 //---left-menu
 .left-menu{
   width: 200px;
@@ -109,6 +132,9 @@ body{
   float: left;
   padding: 10px 10px 10px 10px;
   width: 800px;
+  a:hover{
+    color: orangered;
+  }
 }
 //---footer
 
@@ -122,8 +148,6 @@ body{
   text-align: center;
 }
 //-----LIST
-
-
 .list-group{
   li.list-group-item:hover{
     background-color: lightgrey;
@@ -143,14 +167,9 @@ body{
   }
 }
 
-.container{
-  a:hover{
-    color: orangered;
-  }
-}
 
 //-----button
-//-----grid-table
+//-----grid-table-головне меню жінки
 table.grid-table{
   width: 100%;
   caption{
@@ -176,10 +195,23 @@ table.grid-table{
           padding: 2px 0 2px 0;
           .right{
             float: right;
+
           }
         }
         p{
           margin: 0 0 0 5px;
+        }
+        table.list_has_many
+        {
+          width: 100%;
+          tr{
+            border-bottom: 1px dashed #000000;
+          }
+          td{
+            width: inherit;
+            padding: 2px;
+            margin: 0;
+          }
         }
       }
       .grid-item.table-children{

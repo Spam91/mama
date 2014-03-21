@@ -6,6 +6,7 @@ class ProblemsController < ApplicationController
   def new
     @problem = Problem.new
     @child = Child.find(params[:child_id])
+    @woman = Woman.find(params[:woman_id])
   end
 
   def create
@@ -24,6 +25,7 @@ class ProblemsController < ApplicationController
   end
 
   def edit
+    @woman = Woman.find(params[:woman_id])
     @problem = Problem.find(params[:id])
     @child = Child.find(params[:child_id])
   end
