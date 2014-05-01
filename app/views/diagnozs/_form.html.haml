@@ -14,12 +14,11 @@
         %td
           .pid
             =link_to_function "Добавити", "add_field_diamkh(this)"
+            %br
             = f.fields_for :diamkhs do |m|
-              %p
-          %table{class: "table_for_diamkhs"}
+              =m.hidden_field :mkh_id
             -@diagnoz.diamkhs.each do |dia|
-              %tr
-                %td
-                  =dia.mkh.name
-  = link_to_function "das", "refresh_diamkh()"
+              =dia.mkh.name
+              %br
+  //= link_to_function "das", "refresh_diamkh()"
   = f.submit 'Save'
