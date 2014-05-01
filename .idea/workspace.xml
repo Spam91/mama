@@ -1,89 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd1289aa-6e98-4978-a9c5-243c93c35f0a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb" />
+    <list default="true" id="e82ca4c6-fbb2-4dc1-a656-a2959759ab33" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/women.js.coffee" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/diagnozs/_list.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/diagnozs/index.html.haml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/women/index.html.haml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20140120202440_create_diagnozs.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140117170018_create_woman_infos.rb" afterPath="$PROJECT_DIR$/db/migrate/20140117170018_create_woman_infos.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140120204010_create_oglads.rb" afterPath="$PROJECT_DIR$/db/migrate/20140120204010_create_oglads.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140202112715_create_children.rb" afterPath="$PROJECT_DIR$/db/migrate/20140202112715_create_children.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140202121917_create_params.rb" afterPath="$PROJECT_DIR$/db/migrate/20140202121917_create_params.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140202123648_create_problems.rb" afterPath="$PROJECT_DIR$/db/migrate/20140202123648_create_problems.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__mama.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__mama.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__mama.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__mama.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/diagnozs/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/diagnozs/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_left_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_left_menu.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/apgar.rb" afterPath="$PROJECT_DIR$/app/models/apgar.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/apgars_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/apgars_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/blood.rb" afterPath="$PROJECT_DIR$/app/models/blood.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/child.rb" afterPath="$PROJECT_DIR$/app/models/child.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/children_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/children_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/diagnoz.rb" afterPath="$PROJECT_DIR$/app/models/diagnoz.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/diagnozs.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/diagnozs.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/diagnozs.yml" afterPath="$PROJECT_DIR$/test/fixtures/diagnozs.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/diagnozs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/diagnozs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/diagnozs_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/diagnozs_controller_test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/diagnozs_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/diagnozs_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apgars/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/apgars/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bloods/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/bloods/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/children/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/diagnozs/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/diagnozs/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/oglads/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/oglads/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operations/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/operations/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/params/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/params/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pologs/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/pologs/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/problems/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/problems/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/woman_infos/edit.html.haml" afterPath="$PROJECT_DIR$/app/views/woman_infos/edit.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/women/firstpage.html.erb" afterPath="$PROJECT_DIR$/app/views/women/firstpage.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/women/index.html.erb" afterPath="$PROJECT_DIR$/app/views/women/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb" afterPath="$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mama.iml" afterPath="$PROJECT_DIR$/.idea/mama.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/admin/mkh_group.rb" afterPath="$PROJECT_DIR$/app/models/admin/mkh_group.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/admin/doctors/new.html.haml" afterPath="$PROJECT_DIR$/app/views/admin/doctors/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/apgars/new.html.haml" afterPath="$PROJECT_DIR$/app/views/apgars/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bloods/new.html.haml" afterPath="$PROJECT_DIR$/app/views/bloods/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/new.html.haml" afterPath="$PROJECT_DIR$/app/views/children/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/diagnozs/new.html.haml" afterPath="$PROJECT_DIR$/app/views/diagnozs/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/oglads/new.html.haml" afterPath="$PROJECT_DIR$/app/views/oglads/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operations/new.html.haml" afterPath="$PROJECT_DIR$/app/views/operations/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/params/new.html.haml" afterPath="$PROJECT_DIR$/app/views/params/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pologs/new.html.haml" afterPath="$PROJECT_DIR$/app/views/pologs/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/problems/new.html.haml" afterPath="$PROJECT_DIR$/app/views/problems/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.haml" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/woman_infos/new.html.haml" afterPath="$PROJECT_DIR$/app/views/woman_infos/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/women/new.html.haml" afterPath="$PROJECT_DIR$/app/views/women/new.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/oglad.rb" afterPath="$PROJECT_DIR$/app/models/oglad.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/oglads_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/oglads_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/operation.rb" afterPath="$PROJECT_DIR$/app/models/operation.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/operations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/operations_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/param.rb" afterPath="$PROJECT_DIR$/app/models/param.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/params_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/params_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/polog.rb" afterPath="$PROJECT_DIR$/app/models/polog.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pologs_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pologs_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/problem.rb" afterPath="$PROJECT_DIR$/app/models/problem.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/problems_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/problems_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/children/show.html.erb" afterPath="$PROJECT_DIR$/app/views/children/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/women/show.html.erb" afterPath="$PROJECT_DIR$/app/views/women/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/woman_info.rb" afterPath="$PROJECT_DIR$/app/models/woman_info.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/woman_infos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/woman_infos_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/women_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/women_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mama.iws" />
@@ -96,8 +28,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/mama@Development__mama.coverage" NAME="Development: mama Coverage Results" MODIFIED="1395258297056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
-    <SUITE FILE_PATH="coverage/mama@Production__mama.coverage" NAME="Production: mama Coverage Results" MODIFIED="1395159176957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
+    <SUITE FILE_PATH="coverage/mama@db_rollback__mama.coverage" NAME="db:rollback: mama Coverage Results" MODIFIED="1398939953532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
+    <SUITE FILE_PATH="coverage/mama@db_migrate_status__mama.coverage" NAME="db:migrate:status: mama Coverage Results" MODIFIED="1398939605421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
+    <SUITE FILE_PATH="coverage/mama@Development__mama.coverage" NAME="Development: mama Coverage Results" MODIFIED="1398940009790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
+    <SUITE FILE_PATH="coverage/mama@db_migrate__mama.coverage" NAME="db:migrate: mama Coverage Results" MODIFIED="1398939986713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="mama" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -110,49 +44,101 @@
     <favorites_list name="mama" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.67706525">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="firstpage.html.erb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/women/firstpage.html.erb">
+          <file leaf-file-name="diamkh.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="74" selection-start="10775" selection-end="10775" vertical-scroll-proportion="-15.625" vertical-offset="900" max-vertical-offset="2370">
+                <state line="1" column="25" selection-start="53" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/diagnozs/new.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="2" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1560">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="180">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+          <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/diagnozs/_form.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="67" selection-start="550" selection-end="550" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="810">
+                <state line="22" column="0" selection-start="783" selection-end="831" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="540">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_left_menu.html.erb" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/layouts/_left_menu.html.erb">
+          <file leaf-file-name="20140310120505_create_diagnozs.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20140310120505_create_diagnozs.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="54" selection-start="526" selection-end="526" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="390">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_left_menu_admin.html.erb" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/layouts/_left_menu_admin.html.erb">
+          <file leaf-file-name="_backwoman.html.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/women/_backwoman.html.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="55" column="0" selection-start="1315" selection-end="1374" vertical-scroll-proportion="1.0450704" vertical-offset="83" max-vertical-offset="960">
+                <state line="0" column="45" selection-start="22" selection-end="45" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/diagnozs/edit.html.haml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="198">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mkh_group.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/admin/mkh_group.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="82" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="198">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="application.js.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="1" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.6296296" vertical-offset="638" max-vertical-offset="1476">
+                  <folding>
+                    <marker date="1396264037000" expanded="true" signature="0:663" placeholder="//..." />
+                    <marker date="1396264037000" expanded="true" signature="694:785" placeholder="{...}" />
+                    <marker date="1396264037000" expanded="true" signature="786:2229" placeholder="/*...*/" />
+                    <marker date="1396264037000" expanded="true" signature="2259:2987" placeholder="{...}" />
+                    <marker date="1396264037000" expanded="true" signature="3022:3214" placeholder="{...}" />
+                    <marker date="1396264037000" expanded="true" signature="3061:3163" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mkh_groups_controller.rb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/admin/mkh_groups_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Gemfile">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="7" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.29647058" vertical-offset="0" max-vertical-offset="900">
                   <folding />
                 </state>
               </provider>
@@ -162,28 +148,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/woman_infos/_form.html.haml">
+          <file leaf-file-name="application.js.erb" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="28" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-25.083334" vertical-offset="373" max-vertical-offset="1095">
+                <state line="19" column="20" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1476">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="diagnozs.js.erb" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.3340206" vertical-offset="0" max-vertical-offset="774">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/pologs/_form.html.haml">
+            <entry file="file://$PROJECT_DIR$/app/views/admin/mkh_groups/_form.html.haml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/views/oglads/_form.html.haml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="14" selection-start="1051" selection-end="1066" vertical-scroll-proportion="0.728169" vertical-offset="203" max-vertical-offset="1080">
+                <state line="20" column="43" selection-start="598" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="486">
                   <folding />
                 </state>
               </provider>
@@ -204,57 +190,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/diagnozs/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/diagnozs/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/children/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/woman_infos/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/woman_infos/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/pologs/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/operations/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/admin/mkh_group.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js.erb" />
+        <option value="$PROJECT_DIR$/app/models/diagnoz.rb" />
         <option value="$PROJECT_DIR$/app/views/diagnozs/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/children/backchild.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/child_infos/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/child_infos/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/child_father_bloods/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/child_father_bloods/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/apgars/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/apgars/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/params/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/params/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/problems/edit.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/problems/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/child_infos/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/apgars/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/child_father_bloods/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/params/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/problems/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/women/_backwoman.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/women/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/children/edit.html.haml" />
-        <option value="$PROJECT_DIR$/db/migrate/20140120204010_create_oglads.rb" />
-        <option value="$PROJECT_DIR$/app/views/admin/doctors/new.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/woman_infos_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/oglads/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/models/woman_info.rb" />
-        <option value="$PROJECT_DIR$/app/models/polog.rb" />
-        <option value="$PROJECT_DIR$/app/models/operation.rb" />
-        <option value="$PROJECT_DIR$/app/models/oglad.rb" />
-        <option value="$PROJECT_DIR$/app/views/bloods/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/blood.rb" />
-        <option value="$PROJECT_DIR$/app/models/child.rb" />
-        <option value="$PROJECT_DIR$/app/models/child_info.rb" />
-        <option value="$PROJECT_DIR$/app/models/child_father_blood.rb" />
-        <option value="$PROJECT_DIR$/app/models/apgar.rb" />
-        <option value="$PROJECT_DIR$/app/models/problem.rb" />
-        <option value="$PROJECT_DIR$/app/views/women/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/woman_infos/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/women/firstpage.html.erb" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_left_menu.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -297,6 +238,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,15 +267,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="women" />
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,21 +318,284 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diagnozs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mama" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="223" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="231" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="223" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="231" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1126" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: mama">
+    <configuration default="false" name="db:rollback: mama" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="mama" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:rollback" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="STEP=25" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate:status: mama" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="mama" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate:status" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate: mama" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="mama" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -492,44 +707,103 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Rails.Development: mama" />
       <item index="1" class="java.lang.String" itemvalue="Rails.Production: mama" />
       <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:rollback: mama" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate:status: mama" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate: mama" />
     </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: mama" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:rollback: mama" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate:status: mama" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dd1289aa-6e98-4978-a9c5-243c93c35f0a" name="Default" comment="" />
-      <created>1395158984664</created>
-      <updated>1395158984664</updated>
+      <changelist id="e82ca4c6-fbb2-4dc1-a656-a2959759ab33" name="Default" comment="" />
+      <created>1395831725673</created>
+      <updated>1395831725673</updated>
     </task>
+    <task id="LOCAL-00001" summary="Without diagnoz2&#10;">
+      <created>1398937265751</created>
+      <updated>1398937265751</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18410042" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329863" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22739726" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18410958" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1746862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42066807" sideWeight="0.50027394" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42066807" sideWeight="0.49972603" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -544,326 +818,357 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Without diagnoz2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Without diagnoz2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/child_infos/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/diagnozs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/params/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="780" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/params/edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/params/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/problems/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/women/_backwoman.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="95" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/problems/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/children/edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="827" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/women/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="50" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="555" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/problems/edit.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="120" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131130211011_create_women.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="776" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/doctors/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/woman_infos_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="55" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="720">
+        <state line="3" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="1656">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/doctorhistory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/diagnoz.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573" />
+        <state line="5" column="64" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="234">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
+        <state line="1" column="25" selection-start="53" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="540">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin/mkh_group.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="20" selection-start="903" selection-end="903" vertical-scroll-proportion="-17.791666" vertical-offset="443" max-vertical-offset="3585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/woman.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+        <state line="3" column="82" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140120212323_create_pologs.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="28" selection-start="391" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="33" column="1" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1476">
+          <folding>
+            <marker date="1396264037000" expanded="true" signature="0:663" placeholder="//..." />
+            <marker date="1396264037000" expanded="true" signature="694:785" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="786:2229" placeholder="/*...*/" />
+            <marker date="1396264037000" expanded="true" signature="2259:2987" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3022:3214" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3061:3163" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/mkh_groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pologs.css.scss">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pologs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="720">
+        <state line="12" column="17" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/polog.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/diagnozs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="3" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/operation.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/diagnoz.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+        <state line="5" column="64" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140120204010_create_oglads.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="3" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+        <state line="1" column="25" selection-start="53" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/woman_info.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="683" selection-end="966" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/oglad.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="308" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+        <state line="13" column="11" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131201202726_create_bloods.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/admin/mkh_group.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="271" selection-end="279" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="3" column="82" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="198">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bloods/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/mkh_groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="840">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1602">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/blood.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="12" column="17" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/admin/doctor.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="59" selection-start="1125" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="74" max-vertical-offset="660">
+        <state line="19" column="20" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="342" max-vertical-offset="1476">
+          <folding>
+            <marker date="1396264037000" expanded="true" signature="0:663" placeholder="//..." />
+            <marker date="1396264037000" expanded="true" signature="694:785" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="786:2229" placeholder="/*...*/" />
+            <marker date="1396264037000" expanded="true" signature="2259:2987" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3022:3214" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3061:3163" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/mkh_groups/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="598" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diagnozs_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/diagnoz.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="64" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="25" selection-start="53" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/new.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/mkh_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="82" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/mkh_groups_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1230">
+          <folding>
+            <marker date="1396264037000" expanded="true" signature="0:663" placeholder="//..." />
+            <marker date="1396264037000" expanded="true" signature="694:785" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="786:2229" placeholder="/*...*/" />
+            <marker date="1396264037000" expanded="true" signature="2259:2987" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3022:3214" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3061:3163" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/mkh_groups/_form.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="598" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/admin/mkh.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/admin/mkh_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="82" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/apgar.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/mkh_groups_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/param.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/mkh_groups/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="103" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="20" column="43" selection-start="598" selection-end="633" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/child.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/diagnozs_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="402" selection-end="511" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="27" column="26" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="1656">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/problem.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/diamkh.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="34" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+        <state line="1" column="25" selection-start="53" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/child_info.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/diagnoz.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+        <state line="4" column="0" selection-start="112" selection-end="155" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140117170018_create_woman_infos.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/diagnozs.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="41" selection-start="668" selection-end="682" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+        <state line="9" column="1" selection-start="576" selection-end="576" vertical-scroll-proportion="0.3340206" vertical-offset="0" max-vertical-offset="774">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/child_father_blood.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="33" column="1" selection-start="1435" selection-end="1435" vertical-scroll-proportion="1.6296296" vertical-offset="638" max-vertical-offset="1476">
+          <folding>
+            <marker date="1396264037000" expanded="true" signature="0:663" placeholder="//..." />
+            <marker date="1396264037000" expanded="true" signature="694:785" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="786:2229" placeholder="/*...*/" />
+            <marker date="1396264037000" expanded="true" signature="2259:2987" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3022:3214" placeholder="{...}" />
+            <marker date="1396264037000" expanded="true" signature="3061:3163" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/women/_backwoman.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="45" selection-start="22" selection-end="45" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/women/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="1937" selection-end="1937" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="2895">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="15" selection-start="432" selection-end="432" vertical-scroll-proportion="0.42031524" vertical-offset="0" max-vertical-offset="660">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/woman_infos_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/diagnozs/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+        <state line="22" column="0" selection-start="783" selection-end="831" vertical-scroll-proportion="-14.666667" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/woman_infos/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140310120505_create_diagnozs.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="28" selection-start="1530" selection-end="1530" vertical-scroll-proportion="-25.083334" vertical-offset="373" max-vertical-offset="1095">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pologs/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="759">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/oglads/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="14" selection-start="1051" selection-end="1066" vertical-scroll-proportion="0.728169" vertical-offset="203" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/women/firstpage.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="74" selection-start="10775" selection-end="10775" vertical-scroll-proportion="-15.625" vertical-offset="900" max-vertical-offset="2370">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="2" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="67" selection-start="550" selection-end="550" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left_menu.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="526" selection-end="526" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_left_menu_admin.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="1315" selection-end="1374" vertical-scroll-proportion="1.0450704" vertical-offset="83" max-vertical-offset="960">
+        <state line="7" column="13" selection-start="175" selection-end="175" vertical-scroll-proportion="0.29647058" vertical-offset="0" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

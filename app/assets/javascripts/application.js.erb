@@ -17,9 +17,9 @@
 
 function remove_fields(elem) {
     $(elem).prev("input[type=hidden]").val("1");
-    $(elem).parents(".fields").remove();
+    $(elem).parents(".fields").hide();
 }
-lic = 2;
+/*lic = 2;
 function add_field(elem, cc) {
     lic++;
     $(elem).parents(".pid").append("" +
@@ -49,8 +49,10 @@ function add_field2(elem, cc) {
 }
 
 lic2 = 0;
+*/
 function add_field_mkh(elem) {
-    lic2++;
+    var date = new Date;
+    var lic2 = date.getUTCMilliseconds()
     $(elem).parents(".pid").append("" +
             "<p class='fields'>" +
             "<input id='admin_mkh_group_mkhs_attributes_"+lic2+"_code' name='admin_mkh_group[mkhs_attributes]["+lic2+"][code]' size='30' type='text'>" +

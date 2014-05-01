@@ -1,19 +1,19 @@
-= render "women/backwoman"
+= render 'women/backwoman'
 = form_for [@woman, @diagnoz] do |f|
   .center
     %table
       %tr
-        %td{colspan: "2"}
+        %td{colspan: '2'}
           .selcen
             %p
               Вибір групи діагнозів
-            =f.select :tipdia, [["При госпіталізації", 1], ["Клінічний", 2], ["Заключний", 3]], {:include_blank => false}, {class: "selcen"}
+            =f.select :tipdia, [['При госпіталізації', 1], ['Клінічний', 2], ['Заключний', 3]], {:include_blank => false}, {class: 'selcen'}
       %tr
         %td
-          =grouped_collection_select  nil, nil, Admin::MkhGroup.all, :mkhs, :name, :id, :name, {:include_blank => false}, {class: "sel", size: "10"}
+          =grouped_collection_select  nil, nil, Admin::MkhGroup.all, :mkhs, :name, :id, :name, {:include_blank => false}, {class: 'sel', size: '10'}
         %td
           .pid
-            =link_to_function "Добавити", "add_field_diamkh(this)"
+            =link_to_function 'Добавити', 'add_field_diamkh(this)'
             %br
             = f.fields_for :diamkhs do |m|
               =m.hidden_field :mkh_id
@@ -21,4 +21,4 @@
               =dia.mkh.name
               %br
   //= link_to_function "das", "refresh_diamkh()"
-  = f.submit 'Save'
+  = f.submit 'Save', class: 'btn btn-default'
