@@ -25,6 +25,7 @@ class DiagnozsController < ApplicationController
   # GET /diagnozs/new.json
   def new
     @diagnoz = Diagnoz.new
+    @admin_mkh_groups = Admin::MkhGroup.all
     @diagnoz.diamkhs.build
     @woman = Woman.find(params[:woman_id])
     respond_to do |format|
@@ -35,6 +36,7 @@ class DiagnozsController < ApplicationController
   # GET /diagnozs/1/edit
   def edit
     @diagnoz = Diagnoz.find(params[:id])
+    @admin_mkh_groups = Admin::MkhGroup.all
     @woman = Woman.find(params[:woman_id])
   end
 
@@ -46,6 +48,12 @@ class DiagnozsController < ApplicationController
     @woman.diagnozs << @diagnoz
     respond_to do |format|
       if @diagnoz.save
+        params[:diamkhs].each do |p|
+          @diamkh = Diamkh.new
+          @diamkh.mkh_id = p
+          @diamkh.diagnoz_id = @diagnoz.id
+          @diamkh.save
+        end
         format.html { redirect_to [@woman,@diagnoz], notice: 'Diagnoz was successfully created.' }
         format.json { render json: @diagnoz, status: :created, location: @diagnoz }
       else
@@ -63,6 +71,14 @@ class DiagnozsController < ApplicationController
 
     respond_to do |format|
       if @diagnoz.update_attributes(params[:diagnoz])
+        @diamkhs = Diamkh.where('diagnoz_id' => @diagnoz.id)
+        @diamkhs.destroy_all
+        params[:diamkhs].each do |p|
+          @diamkh = Diamkh.new
+          @diamkh.mkh_id = p
+          @diamkh.diagnoz_id = @diagnoz.id
+          @diamkh.save
+        end
         format.html { redirect_to [@woman, @diagnoz], notice: 'Diagnoz was successfully updated.' }
         format.json { head :no_content }
       else

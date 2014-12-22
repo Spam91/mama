@@ -1,9 +1,5 @@
 Mama::Application.routes.draw do
 
-
-
-
-
   resources :women do
     resources :diagnozs
     resources :bloods

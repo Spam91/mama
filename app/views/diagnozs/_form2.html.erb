@@ -1,0 +1,20 @@
+<%= form_for [@woman, @diagnoz] do |f|%>
+    <%=f.select :tipdia, [['При госпіталізації', 1], ['Клінічний', 2], ['Заключний', 3]], {:include_blank => false}, {class: 'selcen'}%>
+    <!--пошук-->
+    <!--<input type="text" id="search">-->
+    <%-array = @diagnoz.diamkhs.map { |f| f.mkh_id }%>
+    <select id='optgroup' multiple='multiple' name="diamkhs[]">
+      <%- @admin_mkh_groups.each do |d|%>
+          <optgroup label='<%=d.name%>'>
+          <%- d.mkhs.each do |m|%>
+                <% if array.include?(m.id)%>
+                    <option value='<%=m.id%>' selected><%=m.name%></option>
+                <%-else%>
+                    <option value='<%=m.id%>'><%=m.name%></option>
+                <%-end%>
+          <%-end%>
+          </optgroup>
+      <%- end%>
+    </select>
+    <%= f.submit 'Save', class: 'btn btn-default'%>
+<%-end%>

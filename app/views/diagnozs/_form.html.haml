@@ -1,4 +1,5 @@
 = render 'women/backwoman'
+= render 'form2'
 = form_for [@woman, @diagnoz] do |f|
   .center
     %table
@@ -17,8 +18,8 @@
             %br
             = f.fields_for :diamkhs do |m|
               =m.hidden_field :mkh_id
-            -@diagnoz.diamkhs.each do |dia|
-              =dia.mkh.name
+            -#-@diagnoz.diamkhs.each do |dia|
+                -#=dia.mkh.name
               %br
-  //= link_to_function "das", "refresh_diamkh()"
+  = link_to_function "das", "refresh_diamkh()"
   = f.submit 'Save', class: 'btn btn-default'

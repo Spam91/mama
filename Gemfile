@@ -5,12 +5,14 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'rake', '10.2.1'
-gem 'sqlite3'
+# gem 'sqlite3'
+gem 'mysql2'
 gem 'haml-rails'
 gem 'annotate', '>=2.6.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem "date-input-rails"
 gem "nested_form"
+gem 'debugger'
 #gem "thin"
 
 # Gems used only for assets and not required
